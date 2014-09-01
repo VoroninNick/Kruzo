@@ -1,0 +1,68 @@
+@import "mixins"
+footer
+    padding:
+        top: 5px
+    border:
+        top: 1px dashed #EE4632
+    .footer_one_item_wrap
+        min-height: 115px
+        height: 115px
+        .footer_one_item_inner
+            +my_vertical_align
+    .header_calls
+        height: 80px !important
+
+        a
+            font:
+                size: 25px !important
+    .footer_wrap
+        background: #6E1112
+        min-height: 115px
+
+/* style for .voronin-block-wrap */
+
+ul.voronin-block-wrap
+    margin-left: 0 !important
+
+    li
+        list-style: none
+        float: left
+        p
+            font-size: 14.22px
+            color: #ffffff
+            font-family: 'Fira Sans', sans-serif !important
+            white-space: nowrap
+            margin:
+                bottom: 0
+                top: 0 !important
+            padding-top: 0px
+
+            a
+                color: inherit
+                text-decoration: none
+                border-bottom: 1px solid rgba(255, 255, 255, 0.4)
+                font-family: inherit
+
+            a:hover
+                color: #ffffff
+                border-bottom: 1px solid rgba(255, 255, 255, 0.8)
+        svg
+            width: 58px !important
+            height: 100% !important
+            path
+                fill: rgba(255, 255, 255, 1)
+    li.vbw-image
+        width: 20%
+    li.vbw-image a:hover path
+        fill: rgba(141, 198, 63, 1)
+        -webkit-transition: all 1s
+        -moz-transition: all 1s
+        -o-transition: all 1s
+        transition: all 1s
+
+    li.vbw-text
+        width: 80%
+        padding: 3% 0 0 2%
+
+
+/*end*/

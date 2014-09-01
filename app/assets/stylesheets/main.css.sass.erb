@@ -1,0 +1,950 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.sass.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "mixins"
+
+@font-face
+    font-family: 'XeniaExtendedC-Regular'
+    src: url('fonts/XeniaExtendedC/XeniaExtendedC_latin+latin-ext+cyrillic+cyrillic-ext_gdi.eot')
+    src: url('fonts/XeniaExtendedC/XeniaExtendedC_latin+latin-ext+cyrillic+cyrillic-ext_gdi.eot?#iefix') format('embedded-opentype')
+    src: url('fonts/XeniaExtendedC/XeniaExtendedC_latin+latin-ext+cyrillic+cyrillic-ext_gdi.woff') format('woff')
+    src: url('fonts/XeniaExtendedC/XeniaExtendedC_latin+latin-ext+cyrillic+cyrillic-ext_gdi.ttf') format('truetype')
+    src: url('fonts/XeniaExtendedC/XeniaExtendedC_latin+latin-ext+cyrillic+cyrillic-ext_gdi.otf') format('opentype')
+    src: url('fonts/XeniaExtendedC/XeniaExtendedC_latin+latin-ext+cyrillic+cyrillic-ext_gdi.svg#XeniaExtendedC-Regular') format('svg')
+    font-weight: 400
+    font-style: normal
+    font-stretch: expanded
+    unicode-range: U+0020-20AC
+
+
+@font-face
+    font-family: 'SegoeScript-Regular'
+    src: url('fonts/Segoe/SegoeScript_latin+latin-ext+cyrillic+cyrillic-ext_gdi.eot')
+    src: url('fonts/Segoe/SegoeScript_latin+latin-ext+cyrillic+cyrillic-ext_gdi.eot?#iefix') format('embedded-opentype')
+    src: url('fonts/Segoe/SegoeScript_latin+latin-ext+cyrillic+cyrillic-ext_gdi.woff') format('woff')
+    src: url('fonts/Segoe/SegoeScript_latin+latin-ext+cyrillic+cyrillic-ext_gdi.ttf') format('truetype')
+    src: url('fonts/Segoe/SegoeScript_latin+latin-ext+cyrillic+cyrillic-ext_gdi.otf') format('opentype')
+    src: url('fonts/Segoe/SegoeScript_latin+latin-ext+cyrillic+cyrillic-ext_gdi.svg#SegoeScript-Regular') format('svg')
+    font-weight: 400
+    font-style: normal
+    font-stretch: normal
+    unicode-range: U+0020-2116
+
+h1, h2, h3, h4, h5, p, span
+    font:
+        family: 'XeniaExtendedC-Regular' !important
+
+#header
+    background: #6E1112
+    height: 100px
+    width: 100%
+    position: relative
+    z-index: 1
+    &:after
+        display: block
+        content: ''
+        width: 100%
+        position: absolute
+        bottom: -5px
+        border-bottom: 1px dashed #EE4632
+
+#main_banner
+    width: 100%
+    height: 650px
+    ul
+        height: 100%
+        margin-left: 0
+        li
+            height: 100%
+            list-style: none
+.background_slide
+    width: 100% !important
+    height: 100% !important
+    overflow: hidden !important
+    -webkit-background-size: cover !important
+    -moz-background-size: cover !important
+    -o-background-size: cover !important
+    background-size: cover !important
+.yellow_background
+    background: #F2C683
+    position: relative
+
+.online_form_wrap
+    margin-top: -160px
+    #online_form
+        height: 400px
+        width: 100%
+        background: #EE4632
+        position: relative
+        &:before
+            display: block
+            content: ''
+            position: absolute
+            width: 100%
+            top: -5px
+            border-top: 1px dashed #EE4632
+        &:after
+            display: block
+            content: ''
+            position: absolute
+            width: 100%
+            bottom: -5px
+            border-top: 1px dashed #EE4632
+        .custom_header_wrap
+            width: 48%
+            &:before
+                display: block
+                content: ''
+                background: #6E1112
+            .custom_header
+                color: #ffffff
+                text-align: left
+                span
+                    text-align: right
+
+        .feed_back_wrap
+            padding: 5px
+            border: 1px dashed #ffffff
+            margin-top: 25px
+            button#feed_back_button
+                background: #6E1112
+                color: #ffffff
+                height: 50px
+                line-height: 50px
+                vertical-align: middle
+                width: 100%
+                margin: 0
+                padding: 0
+                font:
+                    family: 'XeniaExtendedC-Regular' !important
+                    size: 28.82px
+                text:
+                    align: center
+                    transform: uppercase
+
+.form_block_promotion_wrap
+    height: 400px
+    .promotion_inner
+        height: 300px
+        background: #AD6946
+        position: relative
+        top: 50px
+        &:before
+            display: block
+            content: ''
+            width: 100%
+            border-bottom: 1px dashed #EE4631
+            position: absolute
+            top: -5px
+            left: 0
+        p
+            font:
+                size: 27px
+            color: #ffffff
+            text:
+                transform: uppercase
+            margin: 0
+            line-height: 27px
+            span
+                font:
+                    size: 17px
+                    family: 'SegoeScript-Regular' !important
+                text:
+                    transform: none
+                color: #6E1112
+                margin: 0 !important
+                line-height: 17px
+        .promotion_header
+            color: #6E1112
+            font:
+                size: 42px
+                family: 'XeniaExtendedC-Regular'
+            margin:
+                top: 45px
+            span
+                font:
+                    size: 101.2px
+                position: relative
+                top: 15px
+        p.p_first
+            margin:
+                top: 25px
+        p.p_last
+        .promo_info_wrap
+            width: 90%
+            margin: 0 auto
+            position: relative
+            top: -15px
+
+.red_background
+    height: 100px
+    background: #6E1112
+    position: relative
+    line-height: 100px
+    &:after
+        display: block
+        content: ''
+        position: absolute
+        bottom: -5px
+        width: 100%
+        border-bottom: 1px dashed #6E1112
+    h2
+        font:
+            size: 25.82px
+            family: 'XeniaExtendedC-Regular' !important
+        color: #ffffff
+        position: relative
+        vertical-align: middle
+        display: inline-block
+        text-transform: uppercase
+        span
+            color: #EE4631
+            font:
+                size: inherit
+                family: inherit
+                weight: inherit
+            text:
+                transform: inherit
+        &:before
+            display: block
+            content: ''
+            position: absolute
+            top: 0
+            left: -63px
+            width: 37px
+            height: 35px
+            background: url('<%=asset_path("zerna.png")%>')no-repeat
+            background-size: 100%
+        &:after
+            display: block
+            content: ''
+            position: absolute
+            top: 0
+            right: -63px
+            width: 37px
+            height: 35px
+            background: url('<%=asset_path("zerna.png")%>')no-repeat
+            background-size: 100%
+
+.no-padding-left
+    padding-left: 0 !important
+.no-padding-right
+    padding-right: 0 !important
+    
+.input
+    width: 100%
+    label
+        font:
+            size: 14px
+            family: 'Fira Sans', sans-serif
+        color: #6E1112 !important
+        padding-left: 0.9375rem
+    input
+        width: 100%
+        height: 50px
+        padding-left: 15px
+        color: #6E1112
+        font:
+            size: 20px
+        +placeholder
+            font:
+                family: 'SegoeScript-Regular'
+
+.white_background
+    padding-top: 5px
+    position: relative
+.one_item
+    position: relative
+    padding:
+        top: 15px
+        bottom: 70px
+    .promo_label
+        position: absolute
+        top: 0
+        right: 0
+    h4
+        font:
+            size: 14px
+        text:
+            align: center
+            transform: uppercase
+        color: #540100
+    .order_button_wrap
+        padding: 5px
+        border: 1px dashed #540100
+        .order_button
+            height: 38px
+            line-height: 38px
+            vertical-align: middle
+            background: #EE4632
+            color: #ffffff
+            text:
+                transform: uppercase
+            font:
+                size: 25px
+                family: 'XeniaExtendedC-Regular', sans-serif !important
+            padding:
+                left: 18px
+            cursor: pointer
+            display: block
+
+ul.cust_ul
+    li
+        list-style: none
+        position: relative
+        left: 100px
+        padding-top: 50px
+        &:before
+            display: block
+            content: ''
+            background: url('<%=asset_path("star_list_style.png")%>') no-repeat
+            background-size: 100%
+            width: 91px
+            height: 91px
+            position: absolute
+            left: -100px
+            top: 24px
+        p
+            color: #6E1112
+            font:
+                size: 14px
+.custom_header_wrap
+    position: relative
+    width: 30%
+    margin: 0 auto
+    &:before
+        display: block
+        content: ''
+        width: 84px
+        height: 84px
+        position: absolute
+        right: 15%
+        top: -55%
+        background: #EE4632
+        border-radius: 50%
+    .custom_header
+        text:
+            align: center
+            transform: uppercase
+        font:
+            size: 28.82px
+            family: 'XeniaExtendedC-Regular', sans-serif !important
+        color: #6E1112
+        position: relative
+        z-index: 10
+        span
+            text:
+                align: center
+                transform: uppercase
+            font:
+                size: 39px
+                family: 'XeniaExtendedC-Regular', sans-serif !important
+            display: block
+
+img.kruzo_question_left
+    float: right
+img.kruzo_question_right
+    float: left
+.kruzo_one_question
+    h5
+        font:
+            size: 14px
+            family: 'XeniaExtendedC-Regular', sans-serif !important
+        color: #6E1112
+    p
+        font:
+            size: 17px
+            family: 'SegoeScript-Regular', sans-serif !important
+        color: #EE4632
+.kruzo_one_question_right
+    h5
+        text-align: right
+    p
+        text-align: right
+
+.order_question_wrap
+    width: 80%
+    height: 60px
+    padding: 5px
+    border: 1px dashed #ffffff
+
+    #link_to_order_question
+        height: 100%
+        width: 100%
+        background: #6E1112
+        color: #ffffff
+        font:
+            size: 28.82px
+            family: 'XeniaExtendedC-Regular', sans-serif !important
+        text:
+            transform: uppercase
+            align: center
+        line-height: 50px
+        display: inline-block
+        vertical-align: middle
+        cursor: pointer
+        white-space: nowrap
+
+.down_footer_test
+    width: 100%
+    height: 800px
+
+ul.grain_ul
+    margin:
+        top: 1.3rem
+    li
+        list-style: none
+        position: relative
+        &:before
+            display: block
+            content: ''
+            background: url("<%=asset_path('one_grain_list.png')%>") no-repeat
+            background-size: 100%
+            width: 10px
+            height: 12px
+            position: absolute
+            top: 7px
+            left: -16px
+        a
+            font:
+                family: 'XeniaExtendedC-Regular', sans-serif
+                size: 17px
+            text-transform: uppercase
+            color: #ffffff
+
+#logo
+    position: relative
+    z-index: 2
+    img.main_logo
+        position: absolute
+        top: 0
+        left: 0
+    &:before
+        display: block
+        content: ''
+        background: url('<%=asset_path("promo_label.png")%>') no-repeat
+        width: 69px
+        height: 69px
+        position: absolute
+        top: 65px
+        left: 227px
+
+.image_for_client_wrap
+    position: relative
+    &:before
+        display: block
+        content: ''
+        background: url("<%=asset_path('border_for_image.png')%>") no-repeat
+        background-size: 100%
+        width: 178px
+        height: 178px
+        position: absolute
+        top: -20px
+        left: 0
+
+    .image_for_client
+        width: 150px
+        height: 150px
+        overflow: hidden !important
+        -webkit-background-size: cover !important
+        -moz-background-size: cover !important
+        -o-background-size: cover !important
+        background-size: cover !important
+        border-radius: 50%
+        margin:
+            top: 20px
+            left: 20px
+
+.our_clients_one_item
+    padding:
+        bottom: 50px
+    h5
+        font:
+            family: 'XeniaExtendedC-Regular', sans-serif
+            size: 14px
+        color: #6E1112
+        margin: 0
+        line-height: 17px
+        display: block
+    p
+        span
+            font:
+                size: 14px
+                family: 'Fira Sans', sans-serif !important
+            color: #6E1112
+            line-height: 19px
+            display: block
+    p
+        font:
+            size: 17px
+            family: 'SegoeScript-Regular', sans-serif !important
+        color: #EE4632
+        &:first-of-type
+            margin:
+                bottom: 0.5rem
+
+.brown_background
+    padding:
+        top: 107px
+        bottom: 109px
+    .dyskont_vip_card_wrap
+        background: #AD6946
+        height: 300px
+        &:before
+            border-bottom: 1px dashed #ffffff
+        &:after
+            border-bottom: 1px dashed #ffffff
+        .dyskont_vip_card_inner
+            +my_vertical_align
+            z-index: 2
+            p
+                font:
+                    size: 17px
+                    family: 'SegoeScript-Regular', sans-serif !important
+                color: #EE4632
+                text:
+                    align: right
+            .poq_svg_left
+                height: 99px
+                top: 35%
+            .kruzo_vip_card_image_wrap
+                position: relative
+                top: -50px
+                .poq_svg_right
+                    height: 195px
+                    top: 47%
+
+
+
+#vip_card_form
+    background: #EE4632
+    position: relative
+    top: 62px
+    height: 400px
+    .custom_header_wrap
+        &:before
+            background: #6E1112
+        .custom_header
+            color: #ffffff
+        span
+            white-space: nowrap
+
+
+.bx-wrapper, .bx-viewport
+    height: 100% !important
+    .bx-viewport
+        z-index: 0
+        box-shadow: none !important
+        border: none !important
+        left: 0 !important
+
+.header_calls_wrap
+    padding:
+        top: 1rem
+    .header_call_order_wrap
+        text-align: center
+        width: 100%
+        a
+            font:
+                size: 12px
+                family: 'Fira Sans', sans-serif
+            color: #ffffff
+            border-bottom: 1px dotted #ffffff
+.header_calls
+    width: 100%
+    height: 50px
+    background: #ffffff
+    border: 1px solid #EE4632
+    a
+        font:
+            size: 17px
+            family: 'Fira Sans', sans-serif
+            weight: 700
+        color: #6E1112
+        white-space: nowrap
+        display: inline-block
+        width: 100%
+        text:
+            align: center
+.header_inner
+    +my_vertical_align
+
+.page_order_button_wrap
+    width: 100%
+    height: 60px
+    padding: 5px
+    border: 1px dashed #EE4632
+    margin:
+        top: 55px
+        bottom: 10px
+    .page_order_button
+        height: 100%
+        width: 100%
+        float: right
+        background: #6E1112
+        color: #ffffff
+        font:
+            size: 28.82px
+            family: 'XeniaExtendedC-Regular', sans-serif !important
+        text:
+            transform: uppercase
+            align: center
+        line-height: 50px
+        display: inline-block
+        vertical-align: middle
+        cursor: pointer
+
+.index_last_order_question_wrap
+    p
+        font:
+            size: 17px
+            family: 'SegoeScript-Regular', sans-serif !important
+        color: #EE4632
+        text:
+            align: center
+
+
+.loq_text
+    position: relative
+    margin:
+        top: 55px
+    &:before
+        display: block
+        content: attr(data-tooltip)
+        font:
+            size: 164.54px
+            family: 'XeniaExtendedC-Regular', sans-serif !important
+        color: #EE4632
+        +rotate(-15deg)
+        position: absolute
+        top: 50%
+        left: -137px
+    p
+        color: #6E1112
+        font:
+            size: 28.82px
+            family: 'XeniaExtendedC-Regular', sans-serif !important
+        line-height: 28.82px
+        text:
+            align: left
+            transform: uppercase
+        margin: 0
+        span
+            display: inline-block
+            text:
+                transform: uppercase
+            font:
+                size: 43px
+            line-height: 43px
+
+
+.order_vip_card_wrap
+    border: 1px dashed #ffffff
+    margin:
+        top: 24px
+        bottom: 48px
+    button#order_vip_card_button
+        margin: 0 !important
+        padding: 0 !important
+
+.servico-icon
+    position: absolute
+    top: 20%
+    left: 10%
+
+.schema_our_work_wrap
+    .schema_work_one_item_image_wrap
+        width: 71px
+        margin: 0 auto
+
+    .schema_work 
+        position: relative
+        &:before
+            display: block
+            content: attr(data-tooltip)
+            color: #EE4632
+            font:
+                size: 47px
+                family: 'XeniaExtendedC-Regular', sans-serif !important
+            text:
+                transform: uppercase
+                align: center
+            position: absolute
+            top: 35px
+            left: 23px
+        &:after
+            display: block
+            content: ''
+            background: url("<%=asset_path('02-how-we-work-circle-1.svg')%>")
+            background-size: 100%
+            width: 71px
+            height: 77px
+
+    h4
+        color: #6E1112
+        font:
+            size: 15px
+            family: 'XeniaExtendedC-Regular', sans-serif !important
+        text:
+            transform: uppercase
+            align: center
+        span
+            color: #EE4632
+    .page_order_button_wrap
+        border: 1px dashed #6E1112
+        .page_order_button
+            font:
+                size: 15px
+                family: 'XeniaExtendedC-Regular', sans-serif !important
+            background: #EE4632
+            color: #ffffff
+.clock_wrap
+    padding:
+        top: 19px
+    p
+        font:
+            size: 17px
+            family: 'SegoeScript-Regular', sans-serif !important
+        color: #ffffff
+        text:
+            align: left
+            transform: none !important
+    .label_timer
+        width: 30%
+        display: inline-block
+        p
+            font:
+                size: 17px
+#clock
+    width: 70%
+    display: inline-block
+    .countdown_timer
+        width: 61px
+        height: 53px
+        line-height: 53px
+        background: #EE4632
+        color: #ffffff
+        display: inline-block
+        font:
+            size: 34px
+            family: 'XeniaExtendedC-Regular', sans-serif !important
+        text:
+            transform: uppercase
+            align: center
+        position: relative
+        &:after
+            display: block
+            content: ''
+            position: absolute
+            width: 70px
+            height: 60px
+            background: url('<%=asset_path("01-timer-border.svg")%>') no-repeat
+            top: -3px
+            left: -4px
+
+    .two_points
+        width: 20px
+        display: inline-block
+        text-align: center
+        color: #6E1112
+        font:
+            size: 34px
+            weight: 100
+
+.header_top_left_line_wrap
+    overflow: hidden
+    .header_top_left_line
+        position: relative
+        top: -22px
+
+.banner_content_wrap
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    .banner_content
+        h1
+            color: #ffffff
+            font:
+                size: 28.82px
+                family: 'XeniaExtendedC-Regular', sans-serif !important
+            text:
+                transform: uppercase
+        p
+            color: #EE4632
+            font:
+                size: 17px
+                family: 'SegoeScript-Regular', sans-serif !important
+    .banner_content_inner
+        width: 100%
+        +my_vertical_align(20%)
+            position: absolute
+
+.rate_25
+    &:before
+        display: block
+        content: ''
+        width: 100%
+        position: absolute
+        top: -5px
+        left: 0
+        border-bottom: 1px dashed #ffffff
+
+.about_kruzo_wrap
+    padding:
+        top: 20px
+        bottom: 77px
+    .about_one_info
+        width: 20%
+        display: inline-block
+        .more_info_about
+            h4
+                font:
+                    size: 13.13px
+                    family: 'XeniaExtendedC-Regular', sans-serif !important
+                text:
+                    transform: uppercase
+                    align: center
+                color: #6E1112
+
+    .poq_svg_right
+        .poq_svg_right_inner
+            top: 120px
+
+ul#carousel_product
+    padding:
+        top: 18px
+    li
+        list-style: none
+        width: 212px
+
+.why_we_wrap
+    padding:
+        bottom: 80px
+    .poq_svg_left
+        top: 15%
+    .poq_svg_right
+        top: 45%
+
+.dashed_border_top
+    position: relative
+    &:before
+        display: block
+        content: ''
+        width: 100%
+        position: absolute
+        top: -5px
+        left: 0
+        border-bottom: 1px dashed #EE4632
+.dashed_border_bottom
+    position: relative
+    &:after
+        display: block
+        content: ''
+        width: 100%
+        position: absolute
+        bottom: -5px
+        left: 0
+        border-bottom: 1px dashed #EE4632
+        z-index: 1
+
+.index_last_order_question_wrap
+    min-height: 260px
+.promo_left_svg
+    position: absolute
+    z-index: 1
+    top: 22px
+    left: -12px
+.promo_right_svg
+    position: absolute
+    top: 4%
+    right: 0px
+
+.page_order_question_wrap
+    position: relative
+
+.poq_svg_left
+    height: 100%
+    position: absolute
+    width: 28%
+    left: 0
+    overflow: hidden
+    .poq_svg_left_inner
+        position: relative
+        top: 0
+        left: 0
+.poq_svg_right
+    height: 100%
+    position: absolute
+    width: 28%
+    right: 0
+    overflow: hidden
+    .poq_svg_right_inner
+        position: relative
+        top: 0
+        right: 0
+        .inline-svg
+        float: right
+.more_info_about
+    img
+        width: 160px
+        display: block
+        margin: 0 auto
+
+.frequently_asked_questions_inner
+    padding:
+        top: 70px
+        bottom: 43px
+.frequently_asked_questions_wrap
+    .poq_svg_right
+        height: 131px
+        bottom: 20%
+
+.our_customers_say_wrap
+    padding:
+        top: 50px
+        bottom: 30px
+
+.oc_oi_text_wrap
+    padding:
+        top: 30px
+
+p.p_down_vip_card
+    position: relative
+    top: -30px
+
+a.bx-prev
+    background: url('<%=asset_path("03-arrow-left-1.svg")%>') no-repeat !important
+    width: 48px !important
+    height: 48px !important
+a.bx-next
+    background: url('<%=asset_path("03-arrow-right-1.svg")%>') no-repeat !important
+    width: 48px !important
+    height: 48px !important
+
+.fancybox-close
+    background: url('<%=asset_path("03-close-x-1.svg")%>') no-repeat !important
+    width: 48px !important
+    height: 48px !important
+
+.carousel_product_wrap
+    position: relative
+    .cp_navigation
+        width: 48px !important
+        height: 48px !important
+        cursor: pointer
+        position: absolute
+        top: 45%
+
+    #cp_prev
+        background: url('<%=asset_path("03-arrow-left-1.svg")%>') no-repeat !important
+        left: -48px
+    #cp_next
+        background: url('<%=asset_path("03-arrow-right-1.svg")%>') no-repeat !important
+        right: 0
+
+
+
+
+

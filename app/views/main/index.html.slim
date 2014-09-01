@@ -1,0 +1,519 @@
+=render partial: "partials/main_banner"
+.yellow_background.rate_25
+  .row
+    .columns.large-12
+      .online_form_wrap
+        .row
+          .columns.large-6.no-padding-right
+            .form_block_promotion_wrap
+              .promo_left_svg.inline-svg.draw data-src="#{asset_path('01-action-25-line-top-right-1.svg')}" data-width="157" data-height="111"
+              .promotion_inner.dashed_border_top.dashed_border_bottom
+                .promo_info_wrap
+                  .row
+                    .columns.large-12
+                      .promotion_header
+                        |АКЦИЯ! -
+                        span
+                          |25
+                        sup
+                          |%
+                      p.p_first
+                        |скидки на каждый
+                        br
+                        |третий заказ
+                      p.p_last
+                        span
+                          |Оставьте заявку прямо сейчас
+                          br
+                          |и получите скидку 25%
+                      .clock_wrap
+                        #clock
+                        .label_timer
+                          p
+                            |До конца
+                            br
+                            |акции!
+                div.promo_right_svg.inline-svg.draw data-src="#{asset_path('line-coffie-2.svg')}" data-width="239" data-height="195"
+
+          .columns.large-5.left.no-padding-left.no-padding-right
+            #online_form
+              .columns.large-12
+                .custom_header_wrap
+                  .custom_header
+                    |он-лайн
+                    span
+                      |заявка!
+                form.custom_form
+                  .input
+                    label
+                      |Вас зовут:
+                    input placeholder="Воронин Николай"
+                  .input
+                    label
+                      |Вас номер телефона:
+                    input placeholder="050 417 07 28"
+                  .input
+                    label
+                      |Ваша ел. почта:
+                    input placeholder="nick@voroninstudio.eu"
+                  .input
+                    .feed_back_wrap
+                      button#feed_back_button
+                        |ОСТАВИТЬ ЗАЯВКУ
+
+  .about_kruzo_wrap
+    .row
+      .poq_svg_left
+        .poq_svg_left_inner
+          .inline-svg.draw data-width="231" data-height="148" data-src="#{asset_path('02-demals-left-line-1.svg')}"
+      .columns.large-12
+        .about_one_info
+          .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
+            =image_tag asset_path('more_info_about.png')
+            h4
+              |доставка по
+              br
+              |всей стране
+
+        .about_one_info
+          .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
+            =image_tag asset_path('more_info_about.png')
+            h4
+              |работаем на
+              br
+              |рынке украины
+
+        .about_one_info
+          .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
+            =image_tag asset_path('more_info_about.png')
+            h4
+              |Счатливых
+              br
+              |клиента
+        .about_one_info
+          .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
+            =image_tag asset_path('more_info_about.png')
+            h4
+              |кофе крузо
+              br
+              |повышает
+              br
+              |работоспособность
+        .about_one_info
+          .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
+            =image_tag asset_path('more_info_about.png')
+            h4
+              |выпито больше
+              br
+              |ста тыся чашек
+              br
+              |кофе крузо
+      .poq_svg_right
+        .poq_svg_right_inner
+          .inline-svg.draw data-width="229" data-height="94" data-src="#{asset_path('02-demals-right-line-1.svg')}"
+
+
+#assortiment
+  .red_background
+    .row
+      .columns.large-5.large-centered
+        h2
+          |наш ассортимент кофе
+  .white_background
+    .row
+      .columns.large-12
+        .carousel_product_wrap
+          #cp_prev.cp_navigation
+          ul#carousel_product
+            li.one_item
+              =image_tag asset_path("one_item.jpg")
+              .promo_label
+                =image_tag asset_path("promo_label.png")
+              h4
+                |Назва кави
+              .order_button_wrap
+                a.order_button.fancybox href="#order_product" rel="nofollow" заказать
+
+            li.one_item
+              =image_tag asset_path("one_item.jpg")
+              .promo_label
+                =image_tag asset_path("promo_label.png")
+              h4
+                |Назва кави
+              .order_button_wrap
+                a.order_button.fancybox href="#order_product" rel="nofollow" заказать
+
+            li.one_item
+              =image_tag asset_path("one_item.jpg")
+              .promo_label
+                =image_tag asset_path("promo_label.png")
+              h4
+                |Назва кави
+              .order_button_wrap
+                a.order_button.fancybox href="#order_product" rel="nofollow" заказать
+
+            li.one_item
+              =image_tag asset_path("one_item.jpg")
+              .promo_label
+                =image_tag asset_path("promo_label.png")
+              h4
+                |Назва кави
+              .order_button_wrap
+                a.order_button.fancybox href="#order_product" rel="nofollow" заказать
+
+            li.one_item
+              =image_tag asset_path("one_item.jpg")
+              .promo_label
+                =image_tag asset_path("promo_label.png")
+              h4
+                |Назва кави
+              .order_button_wrap
+                a.order_button.fancybox href="#order_product" rel="nofollow" заказать
+
+            li.one_item
+              =image_tag asset_path("one_item.jpg")
+              .promo_label
+                =image_tag asset_path("promo_label.png")
+              h4
+                |Назва кави
+              .order_button_wrap
+                a.order_button.fancybox href="#order_product" rel="nofollow" заказать
+
+            li.one_item
+              =image_tag asset_path("one_item.jpg")
+              .promo_label
+                =image_tag asset_path("promo_label.png")
+              h4
+                |Назва кави
+              .order_button_wrap
+                a.order_button.fancybox href="#order_product" rel="nofollow" заказать
+
+            li.one_item
+              =image_tag asset_path("one_item.jpg")
+              .promo_label
+                =image_tag asset_path("promo_label.png")
+              h4
+                |Назва кави
+              .order_button_wrap
+                a.order_button.fancybox href="#order_product" rel="nofollow" заказать
+          #cp_next.cp_navigation
+
+
+
+
+
+
+#why_we
+  .red_background
+    .row
+      .columns.large-5.large-centered
+        h2
+          |ПОЧЕМУ
+          span
+            |&nbsp;1367&nbsp;
+          |КЛИЕНТОВ ВЫБРАЛИ НАШЕ КОФЕ ?
+
+  .white_background.why_we_wrap
+    .row
+      .poq_svg_left
+        .poq_svg_left_inner
+          .inline-svg.draw data-width="231" data-height="148" data-src="#{asset_path('02-stars-right-line-1.svg')}"
+      .columns.large-5.large-offset-1
+        ul.cust_ul
+          li
+            p
+              |Original кофе. Експорт с Бразилии, Колумбии, Доминиканы, Коста-Рики
+          li
+            p
+              |Дает заряд бодрости на долгое время. Повышает мозговую активность и концентрацию
+          li
+            p
+              |Традиционная технология обжарки проверенная несколькими поколениями
+      .columns.large-5
+        ul.cust_ul
+          li
+            p
+              |Наш кофе рекомендуют признанные львовские бариста
+          li
+            p
+              |100% Натуральный вкус и аромат.  Кофе Kruzo без добавок и ароматизаторов
+          li
+            p
+              |Прямые поставки с Южной Америки обеспечивают оптимальное сочетание цены и качества
+
+
+      .poq_svg_right
+        .poq_svg_right_inner
+          .inline-svg.draw data-width="229" data-height="102" data-src="#{asset_path('02-stars-left-line-1.svg')}"
+
+
+#schema_our_work
+  .yellow_background.dashed_border_top
+    .schema_our_work_wrap
+      .row
+        .columns.large-12
+          .custom_header_wrap
+            .custom_header
+              |схема нашей
+              span
+                |РАБОТЫ!
+      .row
+        .columns.large-3.small-6
+          .schema_work_one_item_image_wrap
+            .schema_work data-tooltip="1"
+          h4 Вы оcставляете
+          .row
+            .columns.large-12
+              .page_order_button_wrap
+                a.page_order_button.fancybox href="#order_on_web_site" rel="nofollow"
+                  |заявку на сайте
+        .columns.large-3.small-6
+          .schema_work_one_item_image_wrap
+            .schema_work data-tooltip="2"
+          h4 Наш менеджер связываеться с вами
+          h4
+            span
+              |для уточнения вкусовых предпочтений
+        .columns.large-3.small-6
+          .schema_work_one_item_image_wrap
+            .schema_work data-tooltip="3"
+          h4 Мы обжариваем кофе
+          h4
+            span
+              |специально для вас
+        .columns.large-3.small-6
+          .schema_work_one_item_image_wrap
+            .schema_work data-tooltip="4"
+          h4 Доставляем Вам кофе в любую точку
+          h4
+            span
+              |Украины до 48 часов
+
+
+
+
+
+
+
+
+.red_background.dashed_border_bottom
+  .row
+    .columns.large-6.large-centered
+      h2
+        |ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
+.yellow_background.frequently_asked_questions_wrap
+
+  .poq_svg_left
+    .poq_svg_left_inner
+      .inline-svg.draw.ornament-right data-src="#{asset_path('02-faq-left-line-1.svg')}" data-width="484" data-height="334"
+
+  .frequently_asked_questions_inner
+    .row
+      .kruzo_one_question.kruzo_one_question_left
+        .columns.large-2
+          =image_tag asset_path("kruzo_question.png"), class: "kruzo_question_left"
+        .columns.large-6.left
+          h5
+            |Сколько в вашем кофе в процентном соотношении арабики робусты?
+          p
+            |Наше кофе имеет следующие соотношения: Бразилия 70 на 30, Коста-Рика 70 на 30, Колумбия и Доминикана  100%-ая арабика.
+    .row
+      .kruzo_one_question.kruzo_one_question_right
+        .columns.large-6.push-4
+          h5
+            |Какие вкусовые качества Вашего кофе?
+          p
+            |Бразилия идеально подойдет для ценителей настоящего крепкого кофе. Коста-Рика для любителей экзотического вкуса. Кофе  Колумбия сильно похоже на вкус конфет с коньяком. Доминикана придает чувство легкости.
+        .columns.large-2
+          =image_tag asset_path("kruzo_question.png"), class: "kruzo_question_right"
+
+    .row
+      .kruzo_one_question.kruzo_one_question_left
+        .columns.large-2
+          =image_tag asset_path("kruzo_question.png"), class: "kruzo_question_left"
+        .columns.large-6.left
+          h5
+            |А точно ли кофе с южноамериканских стран?
+          p
+            |Да. У нас заключены эксклюзивные  договора об экспорте кофе с Бразилии,Колумбии, Коста-Рики и Доминиканы.
+    .row
+      .columns.large-5.right
+        .order_question_wrap
+          a#link_to_order_question.fancybox href="#order_question" rel="nofollow order_question" задать вопрос!
+
+  .poq_svg_right
+    .poq_svg_right_inner
+      .inline-svg.draw.ornament-right data-src="#{asset_path('02-faq-right-line-1.svg')}" data-width="429" data-height="131"
+
+
+
+
+
+#reviews
+  .red_background
+    .row
+      .columns.large-6.large-centered
+        h2
+          |что говорят наши клиенты
+  .white_background.what.our_customers_say_wrap
+    .row#reviews
+      .columns.large-6
+        .row
+          .our_clients_one_item
+            .columns.large-4.medium-4.small-4
+              .image_for_client_wrap
+                .image_for_client style="background: url('#{asset_path("person.jpg")}')no-repeat center center;"
+            .columns.large-8.medium-8.small-8
+              .oc_oi_text_wrap
+                h5
+                  |Антонина Борисовна
+                p
+                  span
+                    |36 лет, бариста
+                p
+                  |Кофе хороший, всегда берем в офис. А магазинов где заказать масса. В Москве от дорогих до дешевых. Сейчас берем в кофе-март. Раньше в другом.
+            .clearfix
+
+      .columns.large-6
+        .row
+          .our_clients_one_item
+            .columns.large-4.medium-4.small-4
+              .image_for_client_wrap
+                .image_for_client style="background: url('#{asset_path("main_banner_1.jpg")}')no-repeat center center;"
+            .columns.large-8.medium-8.small-8
+              .oc_oi_text_wrap
+                h5
+                  |Антонина Борисовна
+                p
+                  span
+                    |36 лет, бариста
+                p
+                  |Кофе хороший, всегда берем в офис. А магазинов где заказать масса. В Москве от дорогих до дешевых. Сейчас берем в кофе-март. Раньше в другом.
+            .clearfix
+
+      .columns.large-6
+        .row
+          .our_clients_one_item
+            .columns.large-4.medium-4.small-4
+              .image_for_client_wrap
+                .image_for_client style="background: url('#{asset_path("main_banner_1.jpg")}')no-repeat center center;"
+            .columns.large-8.medium-8.small-8
+              .oc_oi_text_wrap
+                h5
+                  |Антонина Борисовна
+                p
+                  span
+                    |36 лет, бариста
+                p
+                  |Кофе хороший, всегда берем в офис. А магазинов где заказать масса. В Москве от дорогих до дешевых. Сейчас берем в кофе-март. Раньше в другом.
+            .clearfix
+
+      .columns.large-6
+        .row
+          .our_clients_one_item
+            .columns.large-4.medium-4.small-4
+              .image_for_client_wrap
+                .image_for_client style="background: url('#{asset_path("person.jpg")}')no-repeat center center;"
+            .columns.large-8.medium-8.small-8
+              .oc_oi_text_wrap
+                h5
+                  |Антонина Борисовна
+                p
+                  span
+                    |36 лет, бариста
+                p
+                  |Кофе хороший, всегда берем в офис. А магазинов где заказать масса. В Москве от дорогих до дешевых. Сейчас берем в кофе-март. Раньше в другом.
+            .clearfix
+
+
+
+
+
+.yellow_background.dashed_border_top
+  .brown_background
+    .dyskont_vip_card_wrap.dashed_border_top.dashed_border_bottom
+      .dyskont_vip_card_inner
+        .poq_svg_left
+          .poq_svg_left_inner
+            .inline-svg.draw data-src="#{asset_path('02-card-left-line-1.svg')}" data-width="247" data-height="99"
+        .row
+          .columns.large-7
+            .row
+              .columns.large-12
+                .kruzo_vip_card_image_wrap
+                  =image_tag asset_path('kruzo_card.png')
+                  .poq_svg_right
+                    .poq_svg_right_inner
+                      .inline-svg.draw data-src="#{asset_path('line-coffie-2.svg')}" data-width="239" data-height="195"
+            .row
+              .columns.large-12
+                p.p_down_vip_card
+                  |Оставьте заявку прямо сейчас и получите дисконтную VIP-карту вподарок при первой покупке.
+
+          .columns.large-5
+            #vip_card_form.dashed_border_top.dashed_border_bottom
+              .columns.large-12
+                .custom_header_wrap
+                  .custom_header
+                    |Дисконтная
+                    span
+                      |VIP-карта!
+                form
+                  .input
+                    label
+                      |Вас зовут:
+                    input placeholder="Воронин Николай"
+                  .input
+                    label
+                      |Вас номер телефона:
+                    input placeholder="050 417 07 28"
+                  .input
+                    label
+                      |Ваша ел. почта:
+                    input placeholder="nick@voroninstudio.eu"
+                  .input
+                    .page_order_button_wrap.order_vip_card_wrap
+                      button#order_vip_card_button.page_order_button
+                        |ОСТАВИТЬ ЗАЯВКУ
+              .clearfix
+
+
+
+
+
+
+.white_background.dashed_border_top
+  .index_last_order_question_wrap
+    .row
+      .columns.large-5.push-2
+        .loq_text data-tooltip="?"
+          p
+            |Остались
+          p
+            span
+              |вопросы?
+      .columns.large-5
+        .row
+          .columns.large-12
+            .page_order_button_wrap
+              a.page_order_button.fancybox href="#order_question" rel="nofollow" задать вопрос
+
+        .row
+          .columns.large-12
+            p
+              |Менеджеру по продажам
+    .page_order_question_wrap
+      .row
+        .poq_svg_left
+          .poq_svg_left_inner
+            .inline-svg.draw data-width="286" data-height="123" data-src="#{asset_path('02-still-questions-left-line-1.svg')}"
+        .columns.large-4
+          .empty_block
+        .columns.large-8
+          .inline-svg.draw data-width="467" data-height="123" data-src="#{asset_path('02-still-questions-right-line-1.svg')}"
+
+
+
+
+
+
