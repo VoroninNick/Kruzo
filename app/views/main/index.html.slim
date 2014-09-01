@@ -4,7 +4,7 @@
     .columns.large-12
       .online_form_wrap
         .row
-          .columns.large-6.no-padding-right
+          .columns.large-7.no-padding-right
             .form_block_promotion_wrap
               .promo_left_svg.inline-svg.draw data-src="#{asset_path('01-action-25-line-top-right-1.svg')}" data-width="157" data-height="111"
               .promotion_inner.dashed_border_top.dashed_border_bottom
@@ -35,7 +35,7 @@
                             |акции!
                 div.promo_right_svg.inline-svg.draw data-src="#{asset_path('line-coffie-2.svg')}" data-width="239" data-height="195"
 
-          .columns.large-5.left.no-padding-left.no-padding-right
+          .columns.large-5.no-padding-left
             #online_form
               .columns.large-12
                 .custom_header_wrap
@@ -65,7 +65,8 @@
     .row
       .poq_svg_left
         .poq_svg_left_inner
-          .inline-svg.draw data-width="231" data-height="148" data-src="#{asset_path('02-demals-left-line-1.svg')}"
+          /div class="inline-svg draw ornament-left" data-src="http://gardenestudio.com.br/img/ornamento.svg"
+          .inline-svg.draw.ornament-left data-src="#{asset_path('02-demals-left-line-1.svg')}"
       .columns.large-12
         .about_one_info
           .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
@@ -110,7 +111,9 @@
               |кофе крузо
       .poq_svg_right
         .poq_svg_right_inner
-          .inline-svg.draw data-width="229" data-height="94" data-src="#{asset_path('02-demals-right-line-1.svg')}"
+          .inline-svg.draw.ornament-right data-src="#{asset_path('02-demals-left-line-1.svg')}"
+          /div class="inline-svg draw ornament-left" data-src="http://gardenestudio.com.br/img/ornamento.svg"
+          /.inline-svg.draw.ornament-right data-width="229" data-height="94" data-src="#{asset_path('02-demals-right-line-1.svg')}"
 
 
 #assortiment
@@ -264,7 +267,7 @@
           h4 Вы оcставляете
           .row
             .columns.large-12
-              .page_order_button_wrap
+              .page_order_button_wrap.schema_order_butt_wrap
                 a.page_order_button.fancybox href="#order_on_web_site" rel="nofollow"
                   |заявку на сайте
         .columns.large-3.small-6

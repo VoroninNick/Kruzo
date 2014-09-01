@@ -51,14 +51,38 @@
                     line-height: 29px
                     display: inline-block
 
-.order_product_wrap
-    .custom_header_wrap
-        margin:
-            bottom: -20px
-        .custom_header
-            top: 8px
-            span
-                white-space: nowrap
+    &.order_on_web_site_wrap
+        .custom_header_wrap
+            margin:
+                bottom: -15px !important
+            &:before
+                top: -17% !important
+                right: 29% !important
+            .custom_header
+                top: 8px !important
+                /*span*/
+                    /*white-space: nowrap*/
+
+    &.order_product_wrap
+        .custom_header_wrap
+            margin:
+                bottom: -20px !important
+            .custom_header
+                top: 8px !important
+                span
+                    white-space: nowrap
+
+    &.add_question_wrap
+        .custom_header_wrap
+            margin:
+                bottom: -20px !important
+            &:before
+                top: -17%
+                right: 29%
+            .custom_header
+                top: 8px !important
+                span
+                    white-space: nowrap
 
 
 
