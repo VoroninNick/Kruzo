@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, p, span
     height: 100px
     width: 100%
     position: relative
-    z-index: 1
+    z-index: 3
     &:after
         display: block
         content: ''
@@ -456,7 +456,7 @@ ul.grain_ul
         top: 65px
         left: 227px
         @media (min-width : 0em) and (max-width : 40em)
-            left: 184px
+            left: 230px
 
 .image_for_client_wrap
     position: relative
@@ -1030,10 +1030,69 @@ a.bx-next
 #mobile_button
     height: 99px
     cursor: pointer
+    position: relative
+    z-index: 2
+    &:hover
+        rect
+            fill: #EE4632
     svg
-        margin-left: 30%
+        /*margin-left: 30%*/
         +my_vertical_align
+        position: absolute
+        right: 0
+        z-index: -1
 
+.mobile_menu_wrapper
+    width: 100%
+    height: 100px
+    position: absolute
+    z-index: 2
+    top: 0
+    left: 0
+    .mobile_menu_inner
+        width: 100%
+        height: 100px
+        position: relative
+        ul#mobile_menu
+            margin-left: 0
+            position: relative
+            top: -400px
+            +transition (top, 3s ,ease)
+            &.show_mm
+                top: 100px !important
+            li
+                background: #6e1112
+                height: 100px
+                width: 100%
+                border-bottom: 1px solid #EE4632
+                list-style: none
+                .mm_phone_numbers_wrap
+                    height: 100px
+                    a
+                        font:
+                            family: "Fira Sans", sans-serif !important
+                        text:
+                            align: center
+                        display: inherit
+                    .mm_phone_numbers_inner
+                        +my_vertical_align
+                .mm_link_to
+                    height: 100px
+                    a
+                        line-height: 100px
+                        width: 100%
+                a
+                    font:
+                        size: 28.9px
+                        family: 'XeniaExtendedC-Regular', sans-serif !important
+                    color: #ffffff
+                    text:
+                        transform: uppercase
+                        align: center
+                    white-space: nowrap
+                    display: inline-block
+                &:hover
+                    background: #EE4632
 
 
 

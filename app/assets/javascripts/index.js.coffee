@@ -60,3 +60,6 @@ $(document).ready ->
 
     $("#cp_prev").click ->
       owl.trigger "owl.prev"
+
+  $('#mobile_button').click ->
+    $('ul#mobile_menu').toggleClass('show_mm')
