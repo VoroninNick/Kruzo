@@ -3,31 +3,35 @@ header#header
     =image_tag asset_path('Kruzo_logo.png'), class: 'main_logo'
   .header_inner
     .row
-      .columns.large-3
+      .columns.large-3.small-8
         .header_top_left_line_wrap
           .header_top_left_line
             =image_tag asset_path('02-card-left-line-1.svg')
-
-      .columns.large-3
-        ul.grain_ul
-          li
-            a href="#why_we" rel="nofollow"
-              |Почему мы?
-          li
-            a href="#assortiment" rel="nofollow"
-              |ассортимент
-      .columns.large-3
-        ul.grain_ul
-          li
-            a href="#schema_our_work" rel="nofollow"
-              |схема работы
-          li
-            a href="#reviews" rel="nofollow"
-              |отзывы
-      .columns.large-3
-        .header_calls_wrap.hcw_nav
-          .header_calls
-            a href="tell:380443539048" rel="nofollow" (044) 353-90-48
-            a href="tell:390930261085" rel="nofollow" (093) 026-10-85
-          .header_call_order_wrap
-            a.fancybox href="#call_order" rel="nofollow call_order" Заказать звонок!
+      .mdn
+        .columns.large-3
+          ul.grain_ul
+            li
+              a href="#why_we" rel="nofollow"
+                |Почему мы?
+            li
+              a href="#assortiment" rel="nofollow"
+                |ассортимент
+        .columns.large-3
+          ul.grain_ul
+            li
+              a href="#schema_our_work" rel="nofollow"
+                |схема работы
+            li
+              a href="#reviews" rel="nofollow"
+                |отзывы
+        .columns.large-3
+          .header_calls_wrap.hcw_nav
+            .header_calls
+              a href="tell:380443539048" rel="nofollow" (044) 353-90-48
+              a href="tell:390930261085" rel="nofollow" (093) 026-10-85
+            .header_call_order_wrap
+              a.fancybox href="#call_order" rel="nofollow call_order" Заказать звонок!
+      .ddb
+        .columns.small-4
+          #mobile_button
+            = embedded_svg ('kk-menu-mobile-1.svg')

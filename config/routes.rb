@@ -55,4 +55,11 @@ Rails.application.routes.draw do
   #   end
   root "main#index"
   get "test" => "main#test", as: "test"
+
+  post '/order_question' => 'main#order_question', as: :order_question
+  post '/order_online' => 'main#order_online', as: :order_online
+  post '/order_product' => 'main#order_product', as: :order_product
+  post '/order_card' => 'main#order_card', as: :order_card
+  post '/call_order' => 'main#call_order', as: :call_order
+
 end

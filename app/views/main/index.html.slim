@@ -33,7 +33,7 @@
                             |До конца
                             br
                             |акции!
-                div.promo_right_svg.inline-svg.draw data-src="#{asset_path('line-coffie-2.svg')}" data-width="239" data-height="195"
+                div.promo_right_svg.inline-svg.draw data-src="#{asset_path('01-action-25-line-top-right-2.svg')}"
 
           .columns.large-5.no-padding-left
             #online_form
@@ -44,15 +44,15 @@
                     span
                       |заявка!
                 form.custom_form
-                  .input
+                  .input.input_field
                     label
                       |Вас зовут:
                     input placeholder="Воронин Николай"
-                  .input
+                  .input.input_field
                     label
                       |Вас номер телефона:
                     input placeholder="050 417 07 28"
-                  .input
+                  .input.input_field
                     label
                       |Ваша ел. почта:
                     input placeholder="nick@voroninstudio.eu"
@@ -70,7 +70,7 @@
       .columns.large-12
         .about_one_info
           .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
-            =image_tag asset_path('more_info_about.png')
+            =image_tag asset_path('kk-medals-1.png')
             h4
               |доставка по
               br
@@ -78,7 +78,7 @@
 
         .about_one_info
           .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
-            =image_tag asset_path('more_info_about.png')
+            =image_tag asset_path('kk-medals-2.png')
             h4
               |работаем на
               br
@@ -86,14 +86,14 @@
 
         .about_one_info
           .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
-            =image_tag asset_path('more_info_about.png')
+            =image_tag asset_path('kk-medals-3.png')
             h4
               |Счатливых
               br
               |клиента
         .about_one_info
           .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
-            =image_tag asset_path('more_info_about.png')
+            =image_tag asset_path('kk-medals-4.png')
             h4
               |кофе крузо
               br
@@ -102,7 +102,7 @@
               |работоспособность
         .about_one_info
           .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
-            =image_tag asset_path('more_info_about.png')
+            =image_tag asset_path('kk-medals-5.png')
             h4
               |выпито больше
               br
@@ -218,10 +218,10 @@
 
   .white_background.why_we_wrap
     .row
-      .poq_svg_left
+      .poq_svg_left.mdn
         .poq_svg_left_inner
           .inline-svg.draw data-width="231" data-height="148" data-src="#{asset_path('02-stars-right-line-1.svg')}"
-      .columns.large-5.large-offset-1
+      .columns.large-5.large-offset-1.small-12
         ul.cust_ul
           li
             p
@@ -232,7 +232,7 @@
           li
             p
               |Традиционная технология обжарки проверенная несколькими поколениями
-      .columns.large-5
+      .columns.large-5.small-12
         ul.cust_ul
           li
             p
@@ -245,7 +245,7 @@
               |Прямые поставки с Южной Америки обеспечивают оптимальное сочетание цены и качества
 
 
-      .poq_svg_right
+      .poq_svg_right.mdn
         .poq_svg_right_inner
           .inline-svg.draw data-width="229" data-height="102" data-src="#{asset_path('02-stars-left-line-1.svg')}"
 
@@ -260,37 +260,39 @@
               |схема нашей
               span
                 |РАБОТЫ!
-      .row
-        .columns.large-3.small-6
-          .schema_work_one_item_image_wrap
-            .schema_work data-tooltip="1"
-          h4 Вы оcставляете
-          .row
-            .columns.large-12
-              .page_order_button_wrap.schema_order_butt_wrap
-                a.page_order_button.fancybox href="#order_on_web_site" rel="nofollow"
-                  |заявку на сайте
-        .columns.large-3.small-6
-          .schema_work_one_item_image_wrap
-            .schema_work data-tooltip="2"
-          h4 Наш менеджер связываеться с вами
-          h4
-            span
-              |для уточнения вкусовых предпочтений
-        .columns.large-3.small-6
-          .schema_work_one_item_image_wrap
-            .schema_work data-tooltip="3"
-          h4 Мы обжариваем кофе
-          h4
-            span
-              |специально для вас
-        .columns.large-3.small-6
-          .schema_work_one_item_image_wrap
-            .schema_work data-tooltip="4"
-          h4 Доставляем Вам кофе в любую точку
-          h4
-            span
-              |Украины до 48 часов
+
+      .schema_our_work_inner
+        .row
+          .columns.large-3.small-6
+            .schema_work_one_item_image_wrap
+              .schema_work data-my-tooltip="1"
+            h4 Вы оcставляете
+            .row
+              .columns.large-12
+                .page_order_button_wrap.schema_order_butt_wrap
+                  a.page_order_button.fancybox href="#order_on_web_site" rel="nofollow"
+                    |заявку на сайте
+          .columns.large-3.small-6
+            .schema_work_one_item_image_wrap
+              .schema_work data-my-tooltip="2"
+            h4 Наш менеджер связываеться с вами
+            h4
+              span
+                |для уточнения вкусовых предпочтений
+          .columns.large-3.small-6
+            .schema_work_one_item_image_wrap
+              .schema_work data-my-tooltip="3"
+            h4 Мы обжариваем кофе
+            h4
+              span
+                |специально для вас
+          .columns.large-3.small-6
+            .schema_work_one_item_image_wrap
+              .schema_work data-my-tooltip="4"
+            h4 Доставляем Вам кофе в любую точку
+            h4
+              span
+                |Украины до 48 часов
 
 
 
@@ -306,35 +308,35 @@
         |ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
 .yellow_background.frequently_asked_questions_wrap
 
-  .poq_svg_left
+  .poq_svg_left.mdn
     .poq_svg_left_inner
       .inline-svg.draw.ornament-right data-src="#{asset_path('02-faq-left-line-1.svg')}" data-width="484" data-height="334"
 
   .frequently_asked_questions_inner
     .row
       .kruzo_one_question.kruzo_one_question_left
-        .columns.large-2
+        .columns.large-2.medium-2.small-2
           =image_tag asset_path("kruzo_question.png"), class: "kruzo_question_left"
-        .columns.large-6.left
+        .columns.large-6.medium-6.small-10.left
           h5
             |Сколько в вашем кофе в процентном соотношении арабики робусты?
           p
             |Наше кофе имеет следующие соотношения: Бразилия 70 на 30, Коста-Рика 70 на 30, Колумбия и Доминикана  100%-ая арабика.
     .row
       .kruzo_one_question.kruzo_one_question_right
-        .columns.large-6.push-4
+        .columns.large-6.medium-6.small-10.push-4
           h5
             |Какие вкусовые качества Вашего кофе?
           p
             |Бразилия идеально подойдет для ценителей настоящего крепкого кофе. Коста-Рика для любителей экзотического вкуса. Кофе  Колумбия сильно похоже на вкус конфет с коньяком. Доминикана придает чувство легкости.
-        .columns.large-2
+        .columns.large-2.medium-2.small-2.right
           =image_tag asset_path("kruzo_question.png"), class: "kruzo_question_right"
 
     .row
       .kruzo_one_question.kruzo_one_question_left
-        .columns.large-2
+        .columns.large-2.medium-2.small-2
           =image_tag asset_path("kruzo_question.png"), class: "kruzo_question_left"
-        .columns.large-6.left
+        .columns.large-6.medium-6.small-10.left
           h5
             |А точно ли кофе с южноамериканских стран?
           p
@@ -438,7 +440,7 @@
       .dyskont_vip_card_inner
         .poq_svg_left
           .poq_svg_left_inner
-            .inline-svg.draw data-src="#{asset_path('02-card-left-line-1.svg')}" data-width="247" data-height="99"
+            .inline-svg.draw data-src="#{asset_path('02-card-left-line-1.svg')}"
         .row
           .columns.large-7
             .row
@@ -447,7 +449,7 @@
                   =image_tag asset_path('kruzo_card.png')
                   .poq_svg_right
                     .poq_svg_right_inner
-                      .inline-svg.draw data-src="#{asset_path('line-coffie-2.svg')}" data-width="239" data-height="195"
+                      .inline-svg.draw data-src="#{asset_path('line-coffie-2.svg')}"
             .row
               .columns.large-12
                 p.p_down_vip_card
@@ -462,15 +464,15 @@
                     span
                       |VIP-карта!
                 form
-                  .input
+                  .input.input_field
                     label
                       |Вас зовут:
                     input placeholder="Воронин Николай"
-                  .input
+                  .input.input_field
                     label
                       |Вас номер телефона:
                     input placeholder="050 417 07 28"
-                  .input
+                  .input.input_field
                     label
                       |Ваша ел. почта:
                     input placeholder="nick@voroninstudio.eu"
@@ -481,15 +483,11 @@
               .clearfix
 
 
-
-
-
-
 .white_background.dashed_border_top
   .index_last_order_question_wrap
     .row
       .columns.large-5.push-2
-        .loq_text data-tooltip="?"
+        .loq_text data-my-tooltip="?"
           p
             |Остались
           p
@@ -509,11 +507,11 @@
       .row
         .poq_svg_left
           .poq_svg_left_inner
-            .inline-svg.draw data-width="286" data-height="123" data-src="#{asset_path('02-still-questions-left-line-1.svg')}"
+            .inline-svg.draw data-src="#{asset_path('02-still-questions-left-line-1.svg')}"
         .columns.large-4
           .empty_block
         .columns.large-8
-          .inline-svg.draw data-width="467" data-height="123" data-src="#{asset_path('02-still-questions-right-line-1.svg')}"
+          .inline-svg.draw data-src="#{asset_path('02-still-questions-right-line-1.svg')}"
 
 
 

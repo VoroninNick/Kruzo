@@ -49,8 +49,8 @@ $(document).ready ->
       3
     ]
     itemsTablet: [ #2 items between 600 and 0
-      600
-      2
+      640
+      1
     ]
     itemsMobile: false # itemsMobile disabled - inherit from itemsTablet option
     autoPlay : false

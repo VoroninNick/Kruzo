@@ -51,3 +51,5 @@ gem 'capistrano', '~> 3.1.0'
 
 gem 'capistrano-rails'
 
+gem 'nokogiri'
+

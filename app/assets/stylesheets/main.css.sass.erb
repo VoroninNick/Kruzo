@@ -91,14 +91,21 @@ h1, h2, h3, h4, h5, p, span
             bottom: -5px
             border-top: 1px dashed #EE4632
         .custom_header_wrap
-            width: 48%
+            width: 44%
+            top: -30px
+            margin:
+                right: 4.9rem
+                bottom: -25px
             &:before
                 display: block
                 content: ''
                 background: #6E1112
+                right: 38%
+                top: -40%
             .custom_header
                 color: #ffffff
                 text-align: left
+                +rotate(-4.5deg)
                 span
                     text-align: right
 
@@ -228,9 +235,12 @@ h1, h2, h3, h4, h5, p, span
 
 .no-padding-left
     padding-left: 0 !important
+    @media (min-width : 0em) and (max-width : 40em)
+        padding-left: 0.9375rem !important
 .no-padding-right
     padding-right: 0 !important
-    
+    @media (min-width : 0em) and (max-width : 40em)
+        padding-right: 0.9375rem !important
 .input
     width: 100%
     label
@@ -292,8 +302,9 @@ ul.cust_ul
     li
         list-style: none
         position: relative
-        left: 100px
-        padding-top: 50px
+        padding:
+            left: 100px
+            top: 50px
         &:before
             display: block
             content: ''
@@ -302,7 +313,7 @@ ul.cust_ul
             width: 91px
             height: 91px
             position: absolute
-            left: -100px
+            left: 0
             top: 24px
         p
             color: #6E1112
@@ -367,6 +378,8 @@ img.kruzo_question_right
     height: 60px
     padding: 5px
     border: 1px dashed #ffffff
+    @media (min-width : 0em) and (max-width : 40em)
+        width: 100%
 
     #link_to_order_question
         height: 100%
@@ -388,7 +401,14 @@ img.kruzo_question_right
 .down_footer_test
     width: 100%
     height: 800px
+.mdn
+    @media (min-width : 0em) and (max-width : 40em)
+        display: none
 
+.ddb
+    display: none
+    @media (min-width : 0em) and (max-width : 40em)
+        display: block
 ul.grain_ul
     margin:
         top: 1.3rem
@@ -412,6 +432,11 @@ ul.grain_ul
             text-transform: uppercase
             color: #ffffff
 
+            &:hover
+                color: #ee4632
+                border-bottom: 1px solid rgba(238, 50, 70 , 0.7)
+
+
 #logo
     position: relative
     z-index: 2
@@ -419,6 +444,8 @@ ul.grain_ul
         position: absolute
         top: 0
         left: 0
+        @media (min-width : 0em) and (max-width : 40em)
+            width: 43%
     &:before
         display: block
         content: ''
@@ -428,6 +455,8 @@ ul.grain_ul
         position: absolute
         top: 65px
         left: 227px
+        @media (min-width : 0em) and (max-width : 40em)
+            left: 184px
 
 .image_for_client_wrap
     position: relative
@@ -513,6 +542,18 @@ ul.grain_ul
                 .poq_svg_right
                     height: 195px
                     top: 47%
+            .custom_header_wrap
+                width: 48%
+                top: -40px
+                margin-bottom: -41px
+                &:before
+                    right: 32%
+                    top: -24%
+                .custom_header
+                    +rotate (-4.5deg)
+                    span
+                        line-height: 35px
+
 
 
 
@@ -553,6 +594,8 @@ ul.grain_ul
     &.hcw_nav
         width: 60%
         float: right
+        @media (min-width : 0em) and (max-width : 40em)
+            display: none
 
 .header_calls
     width: 100%
@@ -617,7 +660,7 @@ ul.grain_ul
         top: 55px
     &:before
         display: block
-        content: attr(data-tooltip)
+        content: attr(data-my-tooltip)
         font:
             size: 164.54px
             family: 'XeniaExtendedC-Regular', sans-serif !important
@@ -668,7 +711,7 @@ ul.grain_ul
         position: relative
         &:before
             display: block
-            content: attr(data-tooltip)
+            content: attr(data-my-tooltip)
             color: #EE4632
             font:
                 size: 47px
@@ -686,6 +729,20 @@ ul.grain_ul
             background-size: 100%
             width: 71px
             height: 77px
+    .custom_header_wrap
+        width: 44%
+        top: -30px
+        margin:
+            bottom: -25px
+        @media (min-width : 0em) and (max-width : 40em)
+            width: 56%
+        &:before
+            right: 43%
+            top: -42%
+        .custom_header
+            +rotate(-4.5deg)
+            span
+                line-height: 30px
 
     h4
         color: #6E1112
@@ -705,6 +762,10 @@ ul.grain_ul
                 family: 'XeniaExtendedC-Regular', sans-serif !important
             background: #EE4632
             color: #ffffff
+    .schema_our_work_inner
+        padding:
+            top: 30px
+            bottom: 70px
 .clock_wrap
     padding:
         top: 19px
@@ -719,12 +780,16 @@ ul.grain_ul
     .label_timer
         width: 30%
         display: inline-block
+        @media (min-width : 0em) and (max-width : 40em)
+            width: 23%
         p
             font:
                 size: 17px
 #clock
     width: 70%
     display: inline-block
+    @media (min-width : 0em) and (max-width : 40em)
+        width: 77%
     .countdown_timer
         width: 61px
         height: 53px
@@ -825,10 +890,14 @@ ul#carousel_product
     li
         list-style: none
         width: 212px
+        margin: 0 auto
+        @media (min-width : 0em) and (max-width : 40em)
+
 
 .why_we_wrap
     padding:
         bottom: 80px
+        top: 20px
     .poq_svg_left
         top: 15%
     .poq_svg_right
@@ -862,14 +931,17 @@ ul#carousel_product
     position: absolute
     z-index: 1
     top: 22px
-    left: -12px
+    left: 3px
 .promo_right_svg
     position: absolute
     top: 4%
-    right: 0px
+    right: -40px
+    z-index: 11
 
 .page_order_question_wrap
     position: relative
+    top: -31px
+    margin-bottom: -20px
 
 .poq_svg_left
     height: 100%
@@ -946,10 +1018,23 @@ a.bx-next
 
     #cp_prev
         background: url('<%=asset_path("03-arrow-left-1.svg")%>') no-repeat !important
-        left: -48px
+        left: -31px
+        @media (min-width : 0em) and (max-width : 40em)
+            left: 0
     #cp_next
         background: url('<%=asset_path("03-arrow-right-1.svg")%>') no-repeat !important
-        right: 0
+        right: -67px
+        @media (min-width : 0em) and (max-width : 40em)
+            right: 0
+
+#mobile_button
+    height: 99px
+    cursor: pointer
+    svg
+        margin-left: 30%
+        +my_vertical_align
+
+
 
 
 
