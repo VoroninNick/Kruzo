@@ -8,32 +8,33 @@
             .form_block_promotion_wrap
               .promo_left_svg.inline-svg.draw data-src="#{asset_path('01-action-25-line-top-right-1.svg')}" data-width="157" data-height="111"
               .promotion_inner.dashed_border_top.dashed_border_bottom
-                .promo_info_wrap
-                  .row
-                    .columns.large-12
-                      .promotion_header
-                        |АКЦИЯ! -
-                        span
-                          |25
-                        sup
-                          |%
-                      p.p_first
-                        |скидки на каждый
-                        br
-                        |третий заказ
-                      p.p_last
-                        span
-                          |Оставьте заявку прямо сейчас
+                .background_pattern
+                  .promo_info_wrap
+                    .row
+                      .columns.large-12
+                        .promotion_header
+                          |АКЦИЯ! -
+                          span
+                            |25
+                          sup
+                            |%
+                        p.p_first
+                          |скидки на каждый
                           br
-                          |и получите скидку 25%
-                      .clock_wrap
-                        #clock
-                        .label_timer
-                          p
-                            |До конца
+                          |третий заказ
+                        p.p_last
+                          span
+                            |Оставьте заявку прямо сейчас
                             br
-                            |акции!
-                div.promo_right_svg.inline-svg.draw data-src="#{asset_path('01-action-25-line-top-right-2.svg')}"
+                            |и получите скидку 25%
+                        .clock_wrap
+                          #clock
+                          .label_timer
+                            p
+                              |До конца
+                              br
+                              |акции!
+                .promo_right_svg.inline-svg.draw data-src="#{asset_path('01-action-25-line-top-right-2.svg')}"
 
           .columns.large-5.no-padding-left
             #online_form
@@ -115,13 +116,61 @@
           /div class="inline-svg draw ornament-left" data-src="http://gardenestudio.com.br/img/ornamento.svg"
           /.inline-svg.draw.ornament-right data-width="229" data-height="94" data-src="#{asset_path('02-demals-right-line-1.svg')}"
 
+  /.row
+  /  .columns.large-2
+  /    .about_one_info
+  /      .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
+  /        =image_tag asset_path('kk-medals-1.png')
+  /        h4
+  /          |доставка по
+  /          br
+  /          |всей стране
+  /  .columns.large-2
+  /    .about_one_info
+  /      .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
+  /        =image_tag asset_path('kk-medals-2.png')
+  /        h4
+  /          |работаем на
+  /          br
+  /          |рынке украины
+  /
+  /  .columns.large-2
+  /    .about_one_info
+  /      .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
+  /        =image_tag asset_path('kk-medals-3.png')
+  /        h4
+  /          |Счатливых
+  /          br
+  /          |клиента
+  /  .columns.large-2
+  /    .about_one_info
+  /      .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
+  /        =image_tag asset_path('kk-medals-4.png')
+  /        h4
+  /          |кофе крузо
+  /          br
+  /          |повышает
+  /          br
+  /          |работоспособность
+  /  .columns.large-2
+  /    .about_one_info
+  /      .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
+  /        =image_tag asset_path('kk-medals-5.png')
+  /        h4
+  /          |выпито больше
+  /          br
+  /          |ста тыся чашек
+  /          br
+  /          |кофе крузо
 
 #assortiment
   .red_background
-    .row
-      .columns.large-5.large-centered
-        h2
-          |наш ассортимент кофе
+    .background_pattern
+      .row
+        .columns.large-6.large-centered.medium-7.medium-centered.small-12
+          .header_block
+            h2
+              |наш ассортимент кофе
   .white_background
     .row
       .columns.large-12
@@ -208,13 +257,15 @@
 
 #why_we
   .red_background
-    .row
-      .columns.large-5.large-centered
-        h2
-          |ПОЧЕМУ
-          span
-            |&nbsp;1367&nbsp;
-          |КЛИЕНТОВ ВЫБРАЛИ НАШЕ КОФЕ ?
+    .background_pattern
+      .row
+        .columns.large-6.large-centered.medium-6.medium-centered.small-12
+          .header_block
+            h2
+              |ПОЧЕМУ
+              span
+                |&nbsp;1367&nbsp;
+              |КЛИЕНТОВ ВЫБРАЛИ НАШЕ КОФЕ ?
 
   .white_background.why_we_wrap
     .row
@@ -263,7 +314,7 @@
 
       .schema_our_work_inner
         .row
-          .columns.large-3.small-6
+          .columns.large-3.medium-3.small-6
             .schema_work_one_item_image_wrap
               .schema_work data-my-tooltip="1"
             h4 Вы оcставляете
@@ -272,21 +323,21 @@
                 .page_order_button_wrap.schema_order_butt_wrap
                   a.page_order_button.fancybox href="#order_on_web_site" rel="nofollow"
                     |заявку на сайте
-          .columns.large-3.small-6
+          .columns.large-3.medium-3.small-6
             .schema_work_one_item_image_wrap
               .schema_work data-my-tooltip="2"
             h4 Наш менеджер связываеться с вами
             h4
               span
                 |для уточнения вкусовых предпочтений
-          .columns.large-3.small-6
+          .columns.large-3.medium-3.small-6
             .schema_work_one_item_image_wrap
               .schema_work data-my-tooltip="3"
             h4 Мы обжариваем кофе
             h4
               span
                 |специально для вас
-          .columns.large-3.small-6
+          .columns.large-3.medium-3.small-6
             .schema_work_one_item_image_wrap
               .schema_work data-my-tooltip="4"
             h4 Доставляем Вам кофе в любую точку
@@ -296,16 +347,13 @@
 
 
 
-
-
-
-
-
 .red_background.dashed_border_bottom
-  .row
-    .columns.large-6.large-centered
-      h2
-        |ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
+  .background_pattern
+    .row
+      .columns.large-6.large-centered.small-12
+        .header_block
+          h2
+            |ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
 .yellow_background.frequently_asked_questions_wrap
 
   .poq_svg_left.mdn
@@ -342,8 +390,8 @@
           p
             |Да. У нас заключены эксклюзивные  договора об экспорте кофе с Бразилии,Колумбии, Коста-Рики и Доминиканы.
     .row
-      .columns.large-5.right
-        .order_question_wrap
+      .columns.large-5.medium-8.right
+        .order_question_wrap.right
           a#link_to_order_question.fancybox href="#order_question" rel="nofollow order_question" задать вопрос!
 
   .poq_svg_right
@@ -356,10 +404,12 @@
 
 #reviews
   .red_background
-    .row
-      .columns.large-6.large-centered
-        h2
-          |что говорят наши клиенты
+    .background_pattern
+      .row
+        .columns.large-6.large-centered.small-12
+          .header_block
+            h2
+              |что говорят наши клиенты
   .white_background.what.our_customers_say_wrap
     .row#reviews
       .columns.large-6
@@ -437,63 +487,65 @@
 .yellow_background.dashed_border_top
   .brown_background
     .dyskont_vip_card_wrap.dashed_border_top.dashed_border_bottom
-      .dyskont_vip_card_inner
-        .poq_svg_left
-          .poq_svg_left_inner
-            .inline-svg.draw data-src="#{asset_path('02-card-left-line-1.svg')}"
-        .row
-          .columns.large-7
+      .background_pattern
+        .dyskont_vip_card_inner
+          .poq_svg_left.mdn
+            .poq_svg_left_inner
+              .inline-svg.draw data-src="#{asset_path('02-card-left-line-1.svg')}"
+          .dvc_wrap
             .row
-              .columns.large-12
-                .kruzo_vip_card_image_wrap
-                  =image_tag asset_path('kruzo_card.png')
-                  .poq_svg_right
-                    .poq_svg_right_inner
-                      .inline-svg.draw data-src="#{asset_path('line-coffie-2.svg')}"
-            .row
-              .columns.large-12
-                p.p_down_vip_card
-                  |Оставьте заявку прямо сейчас и получите дисконтную VIP-карту вподарок при первой покупке.
+              .columns.large-7.medium-7.mdn
+                .row
+                  .columns.large-12
+                    .kruzo_vip_card_image_wrap
+                      =image_tag asset_path('kruzo_card.png')
+                      .poq_svg_right.mdn
+                        .poq_svg_right_inner
+                          .inline-svg.draw data-src="#{asset_path('line-coffie-2.svg')}"
+                .row
+                  .columns.large-12
+                    p.p_down_vip_card
+                      |Оставьте заявку прямо сейчас и получите дисконтную VIP-карту вподарок при первой покупке.
 
-          .columns.large-5
-            #vip_card_form.dashed_border_top.dashed_border_bottom
-              .columns.large-12
-                .custom_header_wrap
-                  .custom_header
-                    |Дисконтная
-                    span
-                      |VIP-карта!
-                form
-                  .input.input_field
-                    label
-                      |Вас зовут:
-                    input placeholder="Воронин Николай"
-                  .input.input_field
-                    label
-                      |Вас номер телефона:
-                    input placeholder="050 417 07 28"
-                  .input.input_field
-                    label
-                      |Ваша ел. почта:
-                    input placeholder="nick@voroninstudio.eu"
-                  .input
-                    .page_order_button_wrap.order_vip_card_wrap
-                      button#order_vip_card_button.page_order_button
-                        |ОСТАВИТЬ ЗАЯВКУ
-              .clearfix
+              .columns.large-5.medium-5
+                #vip_card_form.dashed_border_top.dashed_border_bottom
+                  .columns.large-12
+                    .custom_header_wrap
+                      .custom_header
+                        |Дисконтная
+                        span
+                          |VIP-карта!
+                    form
+                      .input.input_field
+                        label
+                          |Вас зовут:
+                        input placeholder="Воронин Николай"
+                      .input.input_field
+                        label
+                          |Вас номер телефона:
+                        input placeholder="050 417 07 28"
+                      .input.input_field
+                        label
+                          |Ваша ел. почта:
+                        input placeholder="nick@voroninstudio.eu"
+                      .input
+                        .page_order_button_wrap.order_vip_card_wrap
+                          button#order_vip_card_button.page_order_button
+                            |ОСТАВИТЬ ЗАЯВКУ
+                  .clearfix
 
 
 .white_background.dashed_border_top
   .index_last_order_question_wrap
     .row
-      .columns.large-5.push-2
+      .columns.large-5.medium-5.push-2
         .loq_text data-my-tooltip="?"
           p
             |Остались
           p
             span
               |вопросы?
-      .columns.large-5
+      .columns.large-5.medium-5
         .row
           .columns.large-12
             .page_order_button_wrap

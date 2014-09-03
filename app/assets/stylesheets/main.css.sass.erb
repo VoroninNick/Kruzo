@@ -131,6 +131,8 @@ h1, h2, h3, h4, h5, p, span
 
 .form_block_promotion_wrap
     height: 400px
+    width: 100%
+    position: relative
     .promotion_inner
         height: 300px
         background: #AD6946
@@ -182,6 +184,20 @@ h1, h2, h3, h4, h5, p, span
             margin: 0 auto
             position: relative
             top: -15px
+#assortiment
+    .red_background
+        h2
+            position: relative
+            @media (min-width : 0em) and (max-width : 40em)
+                width: 100%
+            &:after
+                right: -67px
+                @media (min-width : 0em) and (max-width : 40em)
+                    position: absolute
+                    top: 0
+                    right: 0
+
+
 
 .red_background
     height: 100px
@@ -204,6 +220,8 @@ h1, h2, h3, h4, h5, p, span
         vertical-align: middle
         display: inline-block
         text-transform: uppercase
+        padding:
+            left: 57px
         span
             color: #EE4631
             font:
@@ -212,26 +230,6 @@ h1, h2, h3, h4, h5, p, span
                 weight: inherit
             text:
                 transform: inherit
-        &:before
-            display: block
-            content: ''
-            position: absolute
-            top: 0
-            left: -63px
-            width: 37px
-            height: 35px
-            background: url('<%=asset_path("zerna.png")%>')no-repeat
-            background-size: 100%
-        &:after
-            display: block
-            content: ''
-            position: absolute
-            top: 0
-            right: -63px
-            width: 37px
-            height: 35px
-            background: url('<%=asset_path("zerna.png")%>')no-repeat
-            background-size: 100%
 
 .no-padding-left
     padding-left: 0 !important
@@ -465,24 +463,22 @@ ul.grain_ul
         content: ''
         background: url("<%=asset_path('border_for_image.png')%>") no-repeat
         background-size: 100%
-        width: 178px
-        height: 178px
+        width: 100%
+        height: 100%
         position: absolute
-        top: -20px
+        top: 0
         left: 0
 
     .image_for_client
-        width: 150px
-        height: 150px
+        width: 100%
+        height: 0
+        padding-top: 100%
         overflow: hidden !important
         -webkit-background-size: cover !important
         -moz-background-size: cover !important
         -o-background-size: cover !important
         background-size: cover !important
         border-radius: 50%
-        margin:
-            top: 20px
-            left: 20px
 
 .our_clients_one_item
     padding:
@@ -931,7 +927,7 @@ ul#carousel_product
     position: absolute
     z-index: 1
     top: 22px
-    left: 3px
+    left: -11px
 .promo_right_svg
     position: absolute
     top: 4%
@@ -1074,6 +1070,7 @@ a.bx-next
                         text:
                             align: center
                         display: inherit
+                        line-height: 35px
                     .mm_phone_numbers_inner
                         +my_vertical_align
                 .mm_link_to
@@ -1081,6 +1078,22 @@ a.bx-next
                     a
                         line-height: 100px
                         width: 100%
+                        svg
+                            width: 14px
+                            height: 21px
+                            margin-right: 4px
+
+                    .mm_link_to_ico, .mm_link_to_a
+                        height: 100px
+                        float: left
+                    .mm_link_to_ico
+                        width: 20%
+                        svg
+                            +my_vertical_align
+                            width: auto
+                            height: 17px
+                    .mm_link_to_a
+                        width: 80%
                 a
                     font:
                         size: 28.9px
@@ -1093,6 +1106,50 @@ a.bx-next
                     display: inline-block
                 &:hover
                     background: #EE4632
+                    path
+                        fill: #6e1112
+.background_pattern
+    position: inherit
+    width: inherit
+    height: inherit
+    background: url('<%=asset_path("halloween_skulls_overlay_by_cesstrelle-d6qo29r.png")%>')
+
+.header_block
+    position: relative
+    h2
+        width: 87% !important
+        margin: 0 auto !important
+        text-align: center !important
+        position: relative
+    &:before
+        display: block
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 37px
+        height: 35px
+        background: url('<%=asset_path("zerna.png")%>')no-repeat
+        background-size: 100%
+        +my_vertical_align
+            position: absolute
+    &:after
+        display: block
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        width: 37px
+        height: 35px
+        background: url('<%=asset_path("zerna.png")%>')no-repeat
+        background-size: 100%
+        +my_vertical_align
+            position: absolute
+
+/*.dvc_wrap*/
+    /*height: 400px*/
+//    +my_vertical_align
+
 
 
 
