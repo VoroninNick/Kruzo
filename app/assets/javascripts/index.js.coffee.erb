@@ -1,0 +1,51 @@
+# Place all the behaviors and hooks related to the matching controller here.
+# All this logic will automatically be available in application.js.
+# You can use CoffeeScript in this file: http://coffeescript.org/
+
+
+
+
+$(document).ready ->
+
+  # ===================================================== init fancybox
+  $(".fancybox").fancybox()
+
+  $.fancybox ->
+    "frameWidth" : 1100,
+    'width': 1100,
+    'autoDimensions': false,
+    'autoSize': false
+
+
+  $('ul#banner').bxSlider
+    mode: 'fade'
+    auto: true
+    pause: 6000
+
+  owl = $("#carousel_product")
+  owl.owlCarousel
+    pagination: false,
+    navigation: true,
+    navigationText: [
+      '<%= ApplicationHelper.embedded_svg_js "03-arrow-left-1.svg", class: "owl_arrow_prev"%>',
+      '<%= ApplicationHelper.embedded_svg_js "03-arrow-right-1.svg", class: "owl_arrow_next"%>'
+    ],
+    items: 4 #10 items above 1000px browser width
+    itemsDesktop: [ #5 items between 1000px and 901px
+      1000
+      3
+    ]
+    itemsDesktopSmall: [ # betweem 900px and 601px
+      900
+      2
+    ]
+    itemsTablet: [ #2 items between 600 and 0
+      640
+      1
+    ]
+    itemsMobile: false # itemsMobile disabled - inherit from itemsTablet option
+    autoPlay : false
+
+
+  $('#mobile_button').click ->
+    $('ul#mobile_menu').toggleClass('show_mm')

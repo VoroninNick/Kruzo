@@ -4,7 +4,7 @@
     .columns.large-12
       .online_form_wrap
         .row
-          .columns.large-7.no-padding-right
+          .columns.large-6.large-offset-1.no-padding-right
             .form_block_promotion_wrap
               .promo_left_svg.inline-svg.draw data-src="#{asset_path('01-action-25-line-top-right-1.svg')}" data-width="157" data-height="111"
               .promotion_inner.dashed_border_top.dashed_border_bottom
@@ -34,9 +34,11 @@
                               |До конца
                               br
                               |акции!
+                          .row
+                            /= render partial: 'partials/timer'
                 .promo_right_svg.inline-svg.draw data-src="#{asset_path('01-action-25-line-top-right-2.svg')}"
 
-          .columns.large-5.no-padding-left
+          .columns.large-4.end.no-padding-left
             #online_form
               .columns.large-12
                 .custom_header_wrap
@@ -68,7 +70,7 @@
         .poq_svg_left_inner
           /div class="inline-svg draw ornament-left" data-src="http://gardenestudio.com.br/img/ornamento.svg"
           .inline-svg.draw.ornament-left data-src="#{asset_path('02-demals-left-line-1.svg')}"
-      .columns.large-12
+      .columns.large-2.large-offset-1.medium-2.medium-offset-1.small-6
         .about_one_info
           .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
             =image_tag asset_path('kk-medals-1.png')
@@ -76,7 +78,7 @@
               |доставка по
               br
               |всей стране
-
+      .columns.large-2.medium-2.small-6
         .about_one_info
           .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
             =image_tag asset_path('kk-medals-2.png')
@@ -85,6 +87,7 @@
               br
               |рынке украины
 
+      .columns.large-2.medium-2.small-6
         .about_one_info
           .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
             =image_tag asset_path('kk-medals-3.png')
@@ -92,6 +95,7 @@
               |Счатливых
               br
               |клиента
+      .columns.large-2.medium-2.small-6
         .about_one_info
           .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
             =image_tag asset_path('kk-medals-4.png')
@@ -101,6 +105,7 @@
               |повышает
               br
               |работоспособность
+      .columns.large-2.medium-2.small-6.end
         .about_one_info
           .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
             =image_tag asset_path('kk-medals-5.png')
@@ -110,58 +115,12 @@
               |ста тыся чашек
               br
               |кофе крузо
+
       .poq_svg_right
         .poq_svg_right_inner
-          .inline-svg.draw.ornament-right data-src="#{asset_path('02-demals-left-line-1.svg')}"
+          .block_rate_right_bottom.inline-svg.draw.ornament-right data-src="#{asset_path('02-demals-left-line-1.svg')}"
           /div class="inline-svg draw ornament-left" data-src="http://gardenestudio.com.br/img/ornamento.svg"
           /.inline-svg.draw.ornament-right data-width="229" data-height="94" data-src="#{asset_path('02-demals-right-line-1.svg')}"
-
-  /.row
-  /  .columns.large-2
-  /    .about_one_info
-  /      .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
-  /        =image_tag asset_path('kk-medals-1.png')
-  /        h4
-  /          |доставка по
-  /          br
-  /          |всей стране
-  /  .columns.large-2
-  /    .about_one_info
-  /      .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
-  /        =image_tag asset_path('kk-medals-2.png')
-  /        h4
-  /          |работаем на
-  /          br
-  /          |рынке украины
-  /
-  /  .columns.large-2
-  /    .about_one_info
-  /      .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
-  /        =image_tag asset_path('kk-medals-3.png')
-  /        h4
-  /          |Счатливых
-  /          br
-  /          |клиента
-  /  .columns.large-2
-  /    .about_one_info
-  /      .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
-  /        =image_tag asset_path('kk-medals-4.png')
-  /        h4
-  /          |кофе крузо
-  /          br
-  /          |повышает
-  /          br
-  /          |работоспособность
-  /  .columns.large-2
-  /    .about_one_info
-  /      .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
-  /        =image_tag asset_path('kk-medals-5.png')
-  /        h4
-  /          |выпито больше
-  /          br
-  /          |ста тыся чашек
-  /          br
-  /          |кофе крузо
 
 #assortiment
   .red_background
@@ -175,10 +134,10 @@
     .row
       .columns.large-12
         .carousel_product_wrap
-          #cp_prev.cp_navigation
+          /#cp_prev.cp_navigation
           ul#carousel_product
             li.one_item
-              =image_tag asset_path("one_item.jpg")
+              =image_tag asset_path("product_1.jpg")
               .promo_label
                 =image_tag asset_path("promo_label.png")
               h4
@@ -187,7 +146,7 @@
                 a.order_button.fancybox href="#order_product" rel="nofollow" заказать
 
             li.one_item
-              =image_tag asset_path("one_item.jpg")
+              =image_tag asset_path("product_2.jpg")
               .promo_label
                 =image_tag asset_path("promo_label.png")
               h4
@@ -196,7 +155,7 @@
                 a.order_button.fancybox href="#order_product" rel="nofollow" заказать
 
             li.one_item
-              =image_tag asset_path("one_item.jpg")
+              =image_tag asset_path("product_3.jpg")
               .promo_label
                 =image_tag asset_path("promo_label.png")
               h4
@@ -205,7 +164,7 @@
                 a.order_button.fancybox href="#order_product" rel="nofollow" заказать
 
             li.one_item
-              =image_tag asset_path("one_item.jpg")
+              =image_tag asset_path("product_1.jpg")
               .promo_label
                 =image_tag asset_path("promo_label.png")
               h4
@@ -214,7 +173,7 @@
                 a.order_button.fancybox href="#order_product" rel="nofollow" заказать
 
             li.one_item
-              =image_tag asset_path("one_item.jpg")
+              =image_tag asset_path("product_2.jpg")
               .promo_label
                 =image_tag asset_path("promo_label.png")
               h4
@@ -223,7 +182,7 @@
                 a.order_button.fancybox href="#order_product" rel="nofollow" заказать
 
             li.one_item
-              =image_tag asset_path("one_item.jpg")
+              =image_tag asset_path("product_3.jpg")
               .promo_label
                 =image_tag asset_path("promo_label.png")
               h4
@@ -232,7 +191,7 @@
                 a.order_button.fancybox href="#order_product" rel="nofollow" заказать
 
             li.one_item
-              =image_tag asset_path("one_item.jpg")
+              =image_tag asset_path("product_1.jpg")
               .promo_label
                 =image_tag asset_path("promo_label.png")
               h4
@@ -241,14 +200,14 @@
                 a.order_button.fancybox href="#order_product" rel="nofollow" заказать
 
             li.one_item
-              =image_tag asset_path("one_item.jpg")
+              =image_tag asset_path("product_2.jpg")
               .promo_label
                 =image_tag asset_path("promo_label.png")
               h4
                 |Назва кави
               .order_button_wrap
                 a.order_button.fancybox href="#order_product" rel="nofollow" заказать
-          #cp_next.cp_navigation
+          /#cp_next.cp_navigation
 
 
 
@@ -494,20 +453,20 @@
               .inline-svg.draw data-src="#{asset_path('02-card-left-line-1.svg')}"
           .dvc_wrap
             .row
-              .columns.large-7.medium-7.mdn
+              .columns.large-6.large-offset-1.medium-7.mdn
                 .row
                   .columns.large-12
                     .kruzo_vip_card_image_wrap
                       =image_tag asset_path('kruzo_card.png')
                       .poq_svg_right.mdn
                         .poq_svg_right_inner
-                          .inline-svg.draw data-src="#{asset_path('line-coffie-2.svg')}"
+                          .vip_card_line_right.inline-svg.draw data-src="#{asset_path('line-coffie-2.svg')}"
                 .row
                   .columns.large-12
                     p.p_down_vip_card
                       |Оставьте заявку прямо сейчас и получите дисконтную VIP-карту вподарок при первой покупке.
 
-              .columns.large-5.medium-5
+              .columns.large-4.medium-5.end
                 #vip_card_form.dashed_border_top.dashed_border_bottom
                   .columns.large-12
                     .custom_header_wrap
@@ -538,14 +497,14 @@
 .white_background.dashed_border_top
   .index_last_order_question_wrap
     .row
-      .columns.large-5.medium-5.push-2
+      .columns.large-5.medium-5.large-offset-2
         .loq_text data-my-tooltip="?"
           p
             |Остались
           p
             span
               |вопросы?
-      .columns.large-5.medium-5
+      .columns.large-4.medium-5.end
         .row
           .columns.large-12
             .page_order_button_wrap
@@ -559,11 +518,11 @@
       .row
         .poq_svg_left
           .poq_svg_left_inner
-            .inline-svg.draw data-src="#{asset_path('02-still-questions-left-line-1.svg')}"
+            .footer_still_questions_left.inline-svg.draw data-src="#{asset_path('02-still-questions-left-line-1.svg')}"
         .columns.large-4
           .empty_block
         .columns.large-8
-          .inline-svg.draw data-src="#{asset_path('02-still-questions-right-line-1.svg')}"
+          .footer_still_questions_right.inline-svg.draw data-src="#{asset_path('02-still-questions-right-line-1.svg')}"
 
 
 

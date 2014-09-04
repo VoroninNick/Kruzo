@@ -264,8 +264,8 @@ h1, h2, h3, h4, h5, p, span
 .one_item
     position: relative
     padding:
-        top: 15px
-        bottom: 70px
+        top: 30px
+        bottom: 60px
     .promo_label
         position: absolute
         top: 0
@@ -461,18 +461,29 @@ ul.grain_ul
     &:before
         display: block
         content: ''
-        background: url("<%=asset_path('border_for_image.png')%>") no-repeat
+        background: url("<%=asset_path('kk-responces-circle-1.svg')%>") no-repeat
         background-size: 100%
         width: 100%
         height: 100%
         position: absolute
-        top: 0
-        left: 0
+        top: -3%
+        left: -3%
+    &:after
+        display: block
+        content: ''
+        background: url("<%=asset_path('kk-responces-cup-el-1.svg')%>") no-repeat
+        background-size: 100%
+        position: absolute
+        top: -10%
+        left: -5%
+        width: 30%
+        height: 0
+        padding-top: 30%
 
     .image_for_client
-        width: 100%
+        width: 95%
         height: 0
-        padding-top: 100%
+        padding-top: 95%
         overflow: hidden !important
         -webkit-background-size: cover !important
         -moz-background-size: cover !important
@@ -609,6 +620,10 @@ ul.grain_ul
         width: 100%
         text:
             align: center
+        &:hover
+            color: #6E1112
+            /*border-bottom: rgba(110, 17, 18, 0.7)*/
+
 .header_inner
     +my_vertical_align
 
@@ -864,7 +879,7 @@ ul.grain_ul
         top: 20px
         bottom: 77px
     .about_one_info
-        width: 20%
+        width: 100%
         display: inline-block
         .more_info_about
             h4
@@ -888,7 +903,30 @@ ul#carousel_product
         width: 212px
         margin: 0 auto
         @media (min-width : 0em) and (max-width : 40em)
-
+        img
+            display: block
+            margin: 0 auto
+            padding:
+                bottom: 20px
+    .owl-controls
+        width: 100%
+        .owl-buttons
+            .owl-prev
+                +my_vertical_align
+                    position: absolute
+                left: 0
+                padding: 0 !important
+                margin: 0 !important
+                border-radius: 50%
+                background: none
+            .owl-next
+                +my_vertical_align
+                    position: absolute
+                right: 0
+                padding: 0 !important
+                margin: 0 !important
+                border-radius: 50%
+                background: none
 
 .why_we_wrap
     padding:
@@ -933,6 +971,9 @@ ul#carousel_product
     top: 4%
     right: -40px
     z-index: 11
+    width: 283px !important
+    height: 249px !important
+
 
 .page_order_question_wrap
     position: relative
@@ -1146,9 +1187,25 @@ a.bx-next
         +my_vertical_align
             position: absolute
 
-/*.dvc_wrap*/
-    /*height: 400px*/
-//    +my_vertical_align
+.al_right
+    text:
+        align: right
+
+.block_rate_right_bottom
+    width: 230.75px !important
+    height: 148.25px !important
+
+.footer_still_questions_right
+    width: 467px !important
+    height: 123px !important
+
+body
+    height: auto !important
+
+.vip_card_line_right
+    height: 195.33px !important
+    width: 239px !important
+
 
 
 
