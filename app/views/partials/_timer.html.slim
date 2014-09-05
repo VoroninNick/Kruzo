@@ -1,10 +1,37 @@
 .wrapper
   .time-part-wrapper
+    .time-part.days.tens
+      .digit-wrapper
+        span.digit 0
+        - (-0..0).each do |i|
+          span.digit= -i
+
+    .time-part.days.ones
+      .digit-wrapper
+        span.digit 0
+        - (-7..0).each do |i|
+          span.digit= -i
+
+  .time-part-wrapper
+    .time-part.hours.tens
+      .digit-wrapper
+        span.digit 0
+        - (-2..0).each do |i|
+          span.digit= -i
+    .time-part.hours.ones
+      .digit-wrapper
+        span.digit 0
+        - (-9..0).each do |i|
+          span.digit= -i
+
+
+  .time-part-wrapper
     .time-part.minutes.tens
       .digit-wrapper
         span.digit 0
         - (-5..0).each do |i|
           span.digit= -i
+
     .time-part.minutes.ones
       .digit-wrapper
         span.digit 0
@@ -23,14 +50,14 @@
         - (-9..0).each do |i|
           span.digit= -i
 
-  .time-part-wrapper
-    .time-part.hundredths.tens
-      .digit-wrapper
-        span.digit 0
-        - (-9..0).each do |i|
-          span.digit= -i
-    .time-part.hundredths.ones
-      .digit-wrapper
-        span.digit 0
-        - (-9..0).each do |i|
-          span.digit= -i
+  /.time-part-wrapper
+  /  .time-part.hundredths.tens
+  /    .digit-wrapper
+  /      span.digit 0
+  /      - (-9..0).each do |i|
+  /        span.digit= -i
+  /  .time-part.hundredths.ones
+  /    .digit-wrapper
+  /      span.digit 0
+  /      - (-9..0).each do |i|
+  /        span.digit= -i

@@ -1,0 +1,290 @@
+/* Play with speed and easing of the animation */
+@import "compass";
+$one-second: 1s;
+$easing: cubic-bezier(1,0,1,0);
+/* =========================================== */
+
+@mixin animate($count) {
+  $step: (100 / $count);
+  $progress: 0%;
+  $translate: -$digit-height;
+  @while $progress < 100 {
+    #{$progress} { transform: translateY($translate); }
+    $progress: $progress + $step;
+    $translate: $translate - $digit-height;
+  }
+}
+
+$digit-height: 180px;
+
+.digit {
+  display: inline-block;
+  font-size: 200px;
+  color: rgba(0,0,0,0.25);
+  height: $digit-height;
+  line-height: 1;
+}
+
+.time-part-wrapper {
+  display: inline-block;
+  margin-right: 50px;
+  position: relative;
+
+  &:not(:last-child):after {
+    content: ":";
+    display: block;
+    width: 30px;
+    height: 230px;
+    position: absolute;
+    top: 0px;
+    right: -30px;
+    color: rgba(0,0,0,0.25);
+    font-size: 200px;
+    line-height: 0.9;
+  }
+}
+
+.time-part {
+  width: 140px;
+  text-align: center;
+  height: $digit-height;
+  overflow: hidden;
+  display: inline-block;
+  margin-left: -5px;
+  box-sizing: border-box;
+
+  .digit-wrapper {
+    -webkit-animation-timing-function: $easing;
+    -moz-animation-timing-function: $easing;
+    -ms-animation-timing-function: $easing;
+    -o-animation-timing-function: $easing;
+    animation-timing-function: $easing;
+  }
+
+  &.minutes {
+    &.tens .digit-wrapper {
+      -webkit-animation-name: minutes-tens;
+      -moz-animation-name: minutes-tens;
+      -ms-animation-name: minutes-tens;
+      -o-animation-name: minutes-tens;
+      animation-name: minutes-tens;
+      -webkit-animation-duration: $one-second * 10 * 6 * 10 * 6;
+      -moz-animation-duration: $one-second * 10 * 6 * 10 * 6;
+      -ms-animation-duration: $one-second * 10 * 6 * 10 * 6;
+      -o-animation-duration: $one-second * 10 * 6 * 10 * 6;
+      animation-duration: $one-second * 10 * 6 * 10 * 6;
+      -webkit-animation-iteration-count: 1;
+      -moz-animation-iteration-count: 1;
+      -ms-animation-iteration-count: 1;
+      -o-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+    &.ones .digit-wrapper {
+      -webkit-animation-name: minutes-ones;
+      -moz-animation-name: minutes-ones;
+      -ms-animation-name: minutes-ones;
+      -o-animation-name: minutes-ones;
+      animation-name: minutes-ones;
+      -webkit-animation-duration: $one-second * 10 * 6 * 10;
+      -moz-animation-duration: $one-second * 10 * 6 * 10;
+      -ms-animation-duration: $one-second * 10 * 6 * 10;
+      -o-animation-duration: $one-second * 10 * 6 * 10;
+      animation-duration: $one-second * 10 * 6 * 10;
+      -webkit-animation-iteration-count: 6;
+      -moz-animation-iteration-count: 6;
+      -ms-animation-iteration-count: 6;
+      -o-animation-iteration-count: 6;
+      animation-iteration-count: 6;
+    }
+  }
+
+  &.seconds {
+    &.tens .digit-wrapper {
+      -webkit-animation-name: seconds-tens;
+      -moz-animation-name: seconds-tens;
+      -ms-animation-name: seconds-tens;
+      -o-animation-name: seconds-tens;
+      animation-name: seconds-tens;
+      -webkit-animation-duration: $one-second * 10 * 6;
+      -moz-animation-duration: $one-second * 10 * 6;
+      -ms-animation-duration: $one-second * 10 * 6;
+      -o-animation-duration: $one-second * 10 * 6;
+      animation-duration: $one-second * 10 * 6;
+      -webkit-animation-iteration-count: 60;
+      -moz-animation-iteration-count: 60;
+      -ms-animation-iteration-count: 60;
+      -o-animation-iteration-count: 60;
+      animation-iteration-count: 60;
+    }
+    &.ones .digit-wrapper {
+      -webkit-animation-name: seconds-ones;
+      -moz-animation-name: seconds-ones;
+      -ms-animation-name: seconds-ones;
+      -o-animation-name: seconds-ones;
+      animation-name: seconds-ones;
+      -webkit-animation-duration: $one-second * 10;
+      -moz-animation-duration: $one-second * 10;
+      -ms-animation-duration: $one-second * 10;
+      -o-animation-duration: $one-second * 10;
+      animation-duration: $one-second * 10;
+      -webkit-animation-iteration-count: 360;
+      -moz-animation-iteration-count: 360;
+      -ms-animation-iteration-count: 360;
+      -o-animation-iteration-count: 360;
+      animation-iteration-count: 360;
+    }
+  }
+
+  &.hundredths {
+    &.tens .digit-wrapper {
+
+      -webkit-animation-name: hundredths-tens;
+      -moz-animation-name: hundredths-tens;
+      -ms-animation-name: hundredths-tens;
+      -o-animation-name: hundredths-tens;
+      animation-name: hundredths-tens;
+      -webkit-animation-duration: $one-second;
+      -moz-animation-duration: $one-second;
+      -ms-animation-duration: $one-second;
+      -o-animation-duration: $one-second;
+      animation-duration: $one-second;
+      -webkit-animation-iteration-count: 3600;
+      -moz-animation-iteration-count: 3600;
+      -ms-animation-iteration-count: 3600;
+      -o-animation-iteration-count: 3600;
+      animation-iteration-count: 3600;
+    }
+    &.ones .digit-wrapper {
+      -webkit-animation-name: hundredths-ones;
+      -moz-animation-name: hundredths-ones;
+      -ms-animation-name: hundredths-ones;
+      -o-animation-name: hundredths-ones;
+      animation-name: hundredths-ones;
+      -webkit-animation-duration: $one-second / 10;
+      -moz-animation-duration: $one-second / 10;
+      -ms-animation-duration: $one-second / 10;
+      -o-animation-duration: $one-second / 10;
+      animation-duration: $one-second / 10;
+      -webkit-animation-iteration-count: 36000;
+      -moz-animation-iteration-count: 36000;
+      -ms-animation-iteration-count: 36000;
+      -o-animation-iteration-count: 36000;
+      animation-iteration-count: 36000;
+    }
+  }
+}
+
+@-webkit-keyframes minutes-tens {
+  @include animate(6);
+}
+@keyframes minutes-tens {
+  @include animate(6);
+}
+@keyframes minutes-tens {
+  @include animate(6);
+}
+@keyframes minutes-tens {
+  @include animate(6);
+}
+@keyframes minutes-tens {
+  @include animate(6);
+}
+
+
+
+@-webkit-keyframes minutes-ones {
+  @include animate(10);
+}
+@keyframes minutes-ones {
+  @include animate(10);
+}
+@keyframes minutes-ones {
+  @include animate(10);
+}
+@keyframes minutes-ones {
+  @include animate(10);
+}
+@keyframes minutes-ones {
+  @include animate(10);
+}
+
+
+@keyframes seconds-tens {
+  @include animate(6);
+}
+@-webkit-keyframes seconds-tens {
+  @include animate(6);
+}
+@keyframes seconds-ones {
+  @include animate(10);
+}
+@-webkit-keyframes seconds-ones {
+  @include animate(10);
+}
+
+
+@-webkit-keyframes hundredths-tens {
+  @include animate(10);
+}
+@keyframes hundredths-tens {
+  @include animate(10);
+}
+@keyframes hundredths-tens {
+  @include animate(10);
+}
+@keyframes hundredths-tens {
+  @include animate(10);
+}
+@keyframes hundredths-tens {
+  @include animate(10);
+}
+
+@-webkit-keyframes hundredths-ones {
+  @include animate(10);
+}
+@keyframes hundredths-ones {
+  @include animate(10);
+}
+@keyframes hundredths-ones {
+  @include animate(10);
+}
+@keyframes hundredths-ones {
+  @include animate(10);
+}
+@keyframes hundredths-ones {
+  @include animate(10);
+}
+
+body {
+  background: greenyellow;
+  margin: 0;
+  font-family: "Aldrich";
+}
+
+.wrapper {
+  margin: 100px auto;
+  width: 1000px;
+  position: relative;
+  z-index: 100;
+  background: orange;
+
+  &:before, &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 20px;
+    z-index: 10;
+  }
+
+  &:before {
+    top: 0px;
+    @include background-image(linear-gradient(top,  rgba(241,97,75,1) 0%,rgba(241,97,75,0) 100%));
+  }
+
+  &:after {
+    bottom: 0px;
+    @include background-image(linear-gradient(top,  rgba(241,97,75,0) 0%,rgba(241,97,75,1) 100%));
+  }
+}

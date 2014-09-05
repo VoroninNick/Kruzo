@@ -1,263 +1,264 @@
-=render partial: "partials/main_banner"
-.yellow_background.rate_25
-  .row
-    .columns.large-12
-      .online_form_wrap
-        .row
-          .columns.large-6.large-offset-1.no-padding-right
-            .form_block_promotion_wrap
-              .promo_left_svg.inline-svg.draw data-src="#{asset_path('01-action-25-line-top-right-1.svg')}" data-width="157" data-height="111"
-              .promotion_inner.dashed_border_top.dashed_border_bottom
-                .background_pattern
-                  .promo_info_wrap
-                    .row
-                      .columns.large-12
-                        .promotion_header
-                          |АКЦИЯ! -
-                          span
-                            |25
-                          sup
-                            |%
-                        p.p_first
-                          |скидки на каждый
-                          br
-                          |третий заказ
-                        p.p_last
-                          span
-                            |Оставьте заявку прямо сейчас
-                            br
-                            |и получите скидку 25%
-                        .clock_wrap
-                          #clock
-                          .label_timer
-                            p
-                              |До конца
+.page_scroll_wrap
+  .page_scroll_inner
+    .yellow_background.rate_25
+      .row
+        .columns.large-12
+          .online_form_wrap
+            .row
+              .columns.large-6.large-offset-1.no-padding-right
+                .form_block_promotion_wrap
+                  .promo_left_svg.inline-svg.draw data-src="#{asset_path('01-action-25-line-top-right-1.svg')}" data-width="157" data-height="111"
+                  .promotion_inner.dashed_border_top.dashed_border_bottom
+                    .background_pattern
+                      .promo_info_wrap
+                        .row
+                          .columns.large-12
+                            .promotion_header
+                              |АКЦИЯ! -
+                              span
+                                |25
+                              sup
+                                |%
+                            p.p_first
+                              |скидки на каждый
                               br
-                              |акции!
-                          .row
-                            /= render partial: 'partials/timer'
-                .promo_right_svg.inline-svg.draw data-src="#{asset_path('01-action-25-line-top-right-2.svg')}"
+                              |третий заказ
+                            p.p_last
+                              span
+                                |Оставьте заявку прямо сейчас
+                                br
+                                |и получите скидку 25%
+                            .clock_wrap
+                              #clock
+                              .label_timer
+                                p
+                                  |До конца
+                                  br
+                                  |акции!
+                              /.row
+                              /  = render partial: 'partials/timer'
+                    .promo_right_svg.inline-svg.draw data-src="#{asset_path('01-action-25-line-top-right-2.svg')}"
 
-          .columns.large-4.end.no-padding-left
-            #online_form
-              .columns.large-12
-                .custom_header_wrap
-                  .custom_header
-                    |он-лайн
-                    span
-                      |заявка!
-                form.custom_form
-                  .input.input_field
-                    label
-                      |Вас зовут:
-                    input placeholder="Воронин Николай"
-                  .input.input_field
-                    label
-                      |Вас номер телефона:
-                    input placeholder="050 417 07 28"
-                  .input.input_field
-                    label
-                      |Ваша ел. почта:
-                    input placeholder="nick@voroninstudio.eu"
-                  .input
-                    .feed_back_wrap
-                      button#feed_back_button
-                        |ОСТАВИТЬ ЗАЯВКУ
+              .columns.large-4.end.no-padding-left
+                #online_form
+                  .columns.large-12
+                    .custom_header_wrap
+                      .custom_header
+                        |он-лайн
+                        span
+                          |заявка!
+                    form.custom_form
+                      .input.input_field
+                        label
+                          |Вас зовут:
+                        input placeholder="Воронин Николай"
+                      .input.input_field
+                        label
+                          |Вас номер телефона:
+                        input placeholder="050 417 07 28"
+                      .input.input_field
+                        label
+                          |Ваша ел. почта:
+                        input placeholder="nick@voroninstudio.eu"
+                      .input
+                        .feed_back_wrap
+                          button#feed_back_button
+                            |ОСТАВИТЬ ЗАЯВКУ
 
-  .about_kruzo_wrap
-    .row
-      .poq_svg_left
-        .poq_svg_left_inner
-          /div class="inline-svg draw ornament-left" data-src="http://gardenestudio.com.br/img/ornamento.svg"
-          .inline-svg.draw.ornament-left data-src="#{asset_path('02-demals-left-line-1.svg')}"
-      .columns.large-2.large-offset-1.medium-2.medium-offset-1.small-6
-        .about_one_info
-          .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
-            =image_tag asset_path('kk-medals-1.png')
-            h4
-              |доставка по
-              br
-              |всей стране
-      .columns.large-2.medium-2.small-6
-        .about_one_info
-          .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
-            =image_tag asset_path('kk-medals-2.png')
-            h4
-              |работаем на
-              br
-              |рынке украины
+      .about_kruzo_wrap
+        .row
+          .poq_svg_left
+            .poq_svg_left_inner
+              /div class="inline-svg draw ornament-left" data-src="http://gardenestudio.com.br/img/ornamento.svg"
+              .inline-svg.draw.ornament-left data-src="#{asset_path('02-demals-left-line-1.svg')}"
+          .columns.large-2.large-offset-1.medium-2.medium-offset-1.small-6
+            .about_one_info
+              .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
+                =image_tag asset_path('kk-medals-1.png')
+                h4
+                  |доставка по
+                  br
+                  |всей стране
+          .columns.large-2.medium-2.small-6
+            .about_one_info
+              .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
+                =image_tag asset_path('kk-medals-2.png')
+                h4
+                  |работаем на
+                  br
+                  |рынке украины
 
-      .columns.large-2.medium-2.small-6
-        .about_one_info
-          .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
-            =image_tag asset_path('kk-medals-3.png')
-            h4
-              |Счатливых
-              br
-              |клиента
-      .columns.large-2.medium-2.small-6
-        .about_one_info
-          .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
-            =image_tag asset_path('kk-medals-4.png')
-            h4
-              |кофе крузо
-              br
-              |повышает
-              br
-              |работоспособность
-      .columns.large-2.medium-2.small-6.end
-        .about_one_info
-          .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
-            =image_tag asset_path('kk-medals-5.png')
-            h4
-              |выпито больше
-              br
-              |ста тыся чашек
-              br
-              |кофе крузо
+          .columns.large-2.medium-2.small-6
+            .about_one_info
+              .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
+                =image_tag asset_path('kk-medals-3.png')
+                h4
+                  |Счатливых
+                  br
+                  |клиента
+          .columns.large-2.medium-2.small-6
+            .about_one_info
+              .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
+                =image_tag asset_path('kk-medals-4.png')
+                h4
+                  |кофе крузо
+                  br
+                  |повышает
+                  br
+                  |работоспособность
+          .columns.large-2.medium-2.small-6.end
+            .about_one_info
+              .more_info_about data-image="#{asset_path('02-demals-circle-1.svg')}"
+                =image_tag asset_path('kk-medals-5.png')
+                h4
+                  |выпито больше
+                  br
+                  |ста тыся чашек
+                  br
+                  |кофе крузо
 
-      .poq_svg_right
-        .poq_svg_right_inner
-          .block_rate_right_bottom.inline-svg.draw.ornament-right data-src="#{asset_path('02-demals-left-line-1.svg')}"
-          /div class="inline-svg draw ornament-left" data-src="http://gardenestudio.com.br/img/ornamento.svg"
-          /.inline-svg.draw.ornament-right data-width="229" data-height="94" data-src="#{asset_path('02-demals-right-line-1.svg')}"
+          .poq_svg_right
+            .poq_svg_right_inner
+              .block_rate_right_bottom.inline-svg.draw.ornament-right data-src="#{asset_path('02-demals-left-line-1.svg')}"
+              /div class="inline-svg draw ornament-left" data-src="http://gardenestudio.com.br/img/ornamento.svg"
+              /.inline-svg.draw.ornament-right data-width="229" data-height="94" data-src="#{asset_path('02-demals-right-line-1.svg')}"
 
-#assortiment
-  .red_background
-    .background_pattern
-      .row
-        .columns.large-6.large-centered.medium-7.medium-centered.small-12
-          .header_block
-            h2
-              |наш ассортимент кофе
-  .white_background
-    .row
-      .columns.large-12
-        .carousel_product_wrap
-          /#cp_prev.cp_navigation
-          ul#carousel_product
-            li.one_item
-              =image_tag asset_path("product_1.jpg")
-              .promo_label
-                =image_tag asset_path("promo_label.png")
-              h4
-                |Назва кави
-              .order_button_wrap
-                a.order_button.fancybox href="#order_product" rel="nofollow" заказать
+    #assortiment
+      .red_background
+        .background_pattern
+          .row
+            .columns.large-6.large-centered.medium-7.medium-centered.small-12
+              .header_block
+                h2
+                  |наш ассортимент кофе
+      .white_background
+        .row
+          .columns.large-12
+            .carousel_product_wrap
+              /#cp_prev.cp_navigation
+              ul#carousel_product
+                li.one_item
+                  =image_tag asset_path("product_1.jpg")
+                  .promo_label
+                    =image_tag asset_path("promo_label.png")
+                  h4
+                    |Назва кави
+                  .order_button_wrap
+                    a.order_button.fancybox href="#order_product" rel="nofollow" заказать
 
-            li.one_item
-              =image_tag asset_path("product_2.jpg")
-              .promo_label
-                =image_tag asset_path("promo_label.png")
-              h4
-                |Назва кави
-              .order_button_wrap
-                a.order_button.fancybox href="#order_product" rel="nofollow" заказать
+                li.one_item
+                  =image_tag asset_path("product_2.jpg")
+                  .promo_label
+                    =image_tag asset_path("promo_label.png")
+                  h4
+                    |Назва кави
+                  .order_button_wrap
+                    a.order_button.fancybox href="#order_product" rel="nofollow" заказать
 
-            li.one_item
-              =image_tag asset_path("product_3.jpg")
-              .promo_label
-                =image_tag asset_path("promo_label.png")
-              h4
-                |Назва кави
-              .order_button_wrap
-                a.order_button.fancybox href="#order_product" rel="nofollow" заказать
+                li.one_item
+                  =image_tag asset_path("product_3.jpg")
+                  .promo_label
+                    =image_tag asset_path("promo_label.png")
+                  h4
+                    |Назва кави
+                  .order_button_wrap
+                    a.order_button.fancybox href="#order_product" rel="nofollow" заказать
 
-            li.one_item
-              =image_tag asset_path("product_1.jpg")
-              .promo_label
-                =image_tag asset_path("promo_label.png")
-              h4
-                |Назва кави
-              .order_button_wrap
-                a.order_button.fancybox href="#order_product" rel="nofollow" заказать
+                li.one_item
+                  =image_tag asset_path("product_1.jpg")
+                  .promo_label
+                    =image_tag asset_path("promo_label.png")
+                  h4
+                    |Назва кави
+                  .order_button_wrap
+                    a.order_button.fancybox href="#order_product" rel="nofollow" заказать
 
-            li.one_item
-              =image_tag asset_path("product_2.jpg")
-              .promo_label
-                =image_tag asset_path("promo_label.png")
-              h4
-                |Назва кави
-              .order_button_wrap
-                a.order_button.fancybox href="#order_product" rel="nofollow" заказать
+                li.one_item
+                  =image_tag asset_path("product_2.jpg")
+                  .promo_label
+                    =image_tag asset_path("promo_label.png")
+                  h4
+                    |Назва кави
+                  .order_button_wrap
+                    a.order_button.fancybox href="#order_product" rel="nofollow" заказать
 
-            li.one_item
-              =image_tag asset_path("product_3.jpg")
-              .promo_label
-                =image_tag asset_path("promo_label.png")
-              h4
-                |Назва кави
-              .order_button_wrap
-                a.order_button.fancybox href="#order_product" rel="nofollow" заказать
+                li.one_item
+                  =image_tag asset_path("product_3.jpg")
+                  .promo_label
+                    =image_tag asset_path("promo_label.png")
+                  h4
+                    |Назва кави
+                  .order_button_wrap
+                    a.order_button.fancybox href="#order_product" rel="nofollow" заказать
 
-            li.one_item
-              =image_tag asset_path("product_1.jpg")
-              .promo_label
-                =image_tag asset_path("promo_label.png")
-              h4
-                |Назва кави
-              .order_button_wrap
-                a.order_button.fancybox href="#order_product" rel="nofollow" заказать
+                li.one_item
+                  =image_tag asset_path("product_1.jpg")
+                  .promo_label
+                    =image_tag asset_path("promo_label.png")
+                  h4
+                    |Назва кави
+                  .order_button_wrap
+                    a.order_button.fancybox href="#order_product" rel="nofollow" заказать
 
-            li.one_item
-              =image_tag asset_path("product_2.jpg")
-              .promo_label
-                =image_tag asset_path("promo_label.png")
-              h4
-                |Назва кави
-              .order_button_wrap
-                a.order_button.fancybox href="#order_product" rel="nofollow" заказать
-          /#cp_next.cp_navigation
-
-
-
-
-
-
-#why_we
-  .red_background
-    .background_pattern
-      .row
-        .columns.large-6.large-centered.medium-6.medium-centered.small-12
-          .header_block
-            h2
-              |ПОЧЕМУ
-              span
-                |&nbsp;1367&nbsp;
-              |КЛИЕНТОВ ВЫБРАЛИ НАШЕ КОФЕ ?
-
-  .white_background.why_we_wrap
-    .row
-      .poq_svg_left.mdn
-        .poq_svg_left_inner
-          .inline-svg.draw data-width="231" data-height="148" data-src="#{asset_path('02-stars-right-line-1.svg')}"
-      .columns.large-5.large-offset-1.small-12
-        ul.cust_ul
-          li
-            p
-              |Original кофе. Експорт с Бразилии, Колумбии, Доминиканы, Коста-Рики
-          li
-            p
-              |Дает заряд бодрости на долгое время. Повышает мозговую активность и концентрацию
-          li
-            p
-              |Традиционная технология обжарки проверенная несколькими поколениями
-      .columns.large-5.small-12
-        ul.cust_ul
-          li
-            p
-              |Наш кофе рекомендуют признанные львовские бариста
-          li
-            p
-              |100% Натуральный вкус и аромат.  Кофе Kruzo без добавок и ароматизаторов
-          li
-            p
-              |Прямые поставки с Южной Америки обеспечивают оптимальное сочетание цены и качества
+                li.one_item
+                  =image_tag asset_path("product_2.jpg")
+                  .promo_label
+                    =image_tag asset_path("promo_label.png")
+                  h4
+                    |Назва кави
+                  .order_button_wrap
+                    a.order_button.fancybox href="#order_product" rel="nofollow" заказать
+              /#cp_next.cp_navigation
 
 
-      .poq_svg_right.mdn
-        .poq_svg_right_inner
-          .inline-svg.draw data-width="229" data-height="102" data-src="#{asset_path('02-stars-left-line-1.svg')}"
+
+
+
+
+    #why_we
+      .red_background
+        .background_pattern
+          .row
+            .columns.large-6.large-centered.medium-6.medium-centered.small-12
+              .header_block
+                h2
+                  |ПОЧЕМУ
+                  span
+                    |&nbsp;1367&nbsp;
+                  |КЛИЕНТОВ ВЫБРАЛИ НАШЕ КОФЕ ?
+
+      .white_background.why_we_wrap
+        .row
+          .poq_svg_left.mdn
+            .poq_svg_left_inner
+              .inline-svg.draw data-width="231" data-height="148" data-src="#{asset_path('02-stars-right-line-1.svg')}"
+          .columns.large-5.large-offset-1.small-12
+            ul.cust_ul
+              li
+                p
+                  |Original кофе. Експорт с Бразилии, Колумбии, Доминиканы, Коста-Рики
+              li
+                p
+                  |Дает заряд бодрости на долгое время. Повышает мозговую активность и концентрацию
+              li
+                p
+                  |Традиционная технология обжарки проверенная несколькими поколениями
+          .columns.large-5.small-12
+            ul.cust_ul
+              li
+                p
+                  |Наш кофе рекомендуют признанные львовские бариста
+              li
+                p
+                  |100% Натуральный вкус и аромат.  Кофе Kruzo без добавок и ароматизаторов
+              li
+                p
+                  |Прямые поставки с Южной Америки обеспечивают оптимальное сочетание цены и качества
+
+
+          .poq_svg_right.mdn
+            .poq_svg_right_inner
+              .inline-svg.draw data-width="229" data-height="102" data-src="#{asset_path('02-stars-left-line-1.svg')}"
 
 
 #schema_our_work

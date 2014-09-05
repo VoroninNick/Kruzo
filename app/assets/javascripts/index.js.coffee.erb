@@ -2,6 +2,35 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
+positionFixed = (event_name) ->
+  $wrap =  $('.page_scroll_wrap')
+  $inner = $wrap.find('.page_scroll_inner')
+
+  window_height = $(window).height() - 100
+  wrap_top =  $wrap.offset().top
+  inner_height = $inner.height()
+
+  elem_bottom_edge = wrap_top + inner_height - window_height
+
+  scroll_top = $(document).scrollTop()
+
+  position_top = wrap_top - scroll_top
+
+  if( scroll_top >= elem_bottom_edge)
+    if(!$inner.hasClass('active') || event_name == 'resize')
+      $inner.addClass('active')
+      $inner.css('top', position_top+"px")
+      $wrap.height(inner_height)
+  else
+    $inner.removeClass('active')
+    $wrap.css({'height': 'auto'})
+    $inner.css('top', 'auto')
+
+
+$(document).on('scroll', positionFixed)
+$(window).on('resize', ()->
+    positionFixed('resize')
+)
 
 
 

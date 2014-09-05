@@ -261,6 +261,7 @@ h1, h2, h3, h4, h5, p, span
 .white_background
     padding-top: 5px
     position: relative
+    background: white
 .one_item
     position: relative
     padding:
@@ -1205,6 +1206,26 @@ body
 .vip_card_line_right
     height: 195.33px !important
     width: 239px !important
+
+.header_scroll_wrap
+    position: relative
+    width: 100%
+    height: 750px
+    .header_scroll_inner
+        position: fixed
+        width: 100%
+        height: auto
+
+.page_scroll_wrap
+    position: relative
+    width: 100%
+    .page_scroll_inner
+        position: relative
+        &.active
+            position: fixed
+            width: 100%
+            height: auto
+
 
 
 
