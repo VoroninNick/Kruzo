@@ -11,19 +11,19 @@ div style="display: none"
                   |ВОПРОС!
             p
               |Наш менеджер свяжеться с Вами, чтобы ответить на Ваши вопросы
-            form
+            form#order_question_form
               .input.input_field
                 label
                   |Вас зовут:
-                input placeholder="Воронин Николай"
+                input.name placeholder="Воронин Николай"  name="name"
               .input.input_field
                 label
                   |Ваш номер телефона:
-                input placeholder="050 417 07 28"
+                input.phone placeholder="050 417 07 28"  name="phone"
               .input.input_field
                 label
                   |Ваша ел. почта:
-                input placeholder="nick@voroninstudio.eu"
+                input.email placeholder="nick@voroninstudio.eu"  name="email"
               .input.accept_input
                 .order_button_wrap
                   button.order_button

@@ -570,6 +570,8 @@ ul.grain_ul
     position: relative
     top: 62px
     height: 400px
+    @media (min-width : 0em) and (max-width : 40em)
+        top: 0
     .custom_header_wrap
         &:before
             background: #6E1112
@@ -670,6 +672,8 @@ ul.grain_ul
     position: relative
     margin:
         top: 55px
+    padding:
+        left: 150px
     &:before
         display: block
         content: attr(data-my-tooltip)
@@ -680,7 +684,7 @@ ul.grain_ul
         +rotate(-15deg)
         position: absolute
         top: 50%
-        left: -137px
+        left: 3%
     p
         color: #6E1112
         font:
@@ -920,6 +924,7 @@ ul#carousel_product
                 margin: 0 !important
                 border-radius: 50%
                 background: none
+                opacity: 1 !important
             .owl-next
                 +my_vertical_align
                     position: absolute
@@ -928,6 +933,7 @@ ul#carousel_product
                 margin: 0 !important
                 border-radius: 50%
                 background: none
+                opacity: 1 !important
 
 .why_we_wrap
     padding:
@@ -1095,7 +1101,7 @@ a.bx-next
             margin-left: 0
             position: relative
             top: -400px
-            +transition (top, 3s ,ease)
+            +transition (top, 2s ,ease)
             &.show_mm
                 top: 100px !important
             li

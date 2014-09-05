@@ -35,8 +35,6 @@
                                   |До конца
                                   br
                                   |акции!
-                              /.row
-                              /  = render partial: 'partials/timer'
                     .promo_right_svg.inline-svg.draw data-src="#{asset_path('01-action-25-line-top-right-2.svg')}"
 
               .columns.large-4.end.no-padding-left
@@ -47,19 +45,19 @@
                         |он-лайн
                         span
                           |заявка!
-                    form.custom_form
+                    form#online_form_index_page.custom_form
                       .input.input_field
                         label
                           |Вас зовут:
-                        input placeholder="Воронин Николай"
+                        input.name placeholder="Воронин Николай" name="name"
                       .input.input_field
                         label
                           |Вас номер телефона:
-                        input placeholder="050 417 07 28"
+                        input.phone placeholder="050 417 07 28" name="phone"
                       .input.input_field
                         label
                           |Ваша ел. почта:
-                        input placeholder="nick@voroninstudio.eu"
+                        input.email placeholder="nick@voroninstudio.eu" name="email"
                       .input
                         .feed_back_wrap
                           button#feed_back_button
@@ -454,7 +452,7 @@
               .inline-svg.draw data-src="#{asset_path('02-card-left-line-1.svg')}"
           .dvc_wrap
             .row
-              .columns.large-6.large-offset-1.medium-7.mdn
+              .columns.large-6.large-offset-1.medium-7.mdn.small-12
                 .row
                   .columns.large-12
                     .kruzo_vip_card_image_wrap
@@ -467,7 +465,7 @@
                     p.p_down_vip_card
                       |Оставьте заявку прямо сейчас и получите дисконтную VIP-карту вподарок при первой покупке.
 
-              .columns.large-4.medium-5.end
+              .columns.large-4.medium-5.small-12.end
                 #vip_card_form.dashed_border_top.dashed_border_bottom
                   .columns.large-12
                     .custom_header_wrap
@@ -475,19 +473,19 @@
                         |Дисконтная
                         span
                           |VIP-карта!
-                    form
+                    form#order_vip_card_form
                       .input.input_field
                         label
                           |Вас зовут:
-                        input placeholder="Воронин Николай"
+                        input.name placeholder="Воронин Николай" name="name"
                       .input.input_field
                         label
                           |Вас номер телефона:
-                        input placeholder="050 417 07 28"
+                        input.phone placeholder="050 417 07 28" name="phone"
                       .input.input_field
                         label
                           |Ваша ел. почта:
-                        input placeholder="nick@voroninstudio.eu"
+                        input.email placeholder="nick@voroninstudio.eu" name="email"
                       .input
                         .page_order_button_wrap.order_vip_card_wrap
                           button#order_vip_card_button.page_order_button

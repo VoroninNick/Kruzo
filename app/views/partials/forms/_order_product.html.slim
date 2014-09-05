@@ -11,15 +11,15 @@ div style="display: none"
                   |на заказ!
             p
               |Оставте заявку и мы свяжемся с Вами в течении 30-ти минут
-            form
+            form#order_product_form
               .input.input_field
                 label
                   |Введите Ваше имя:
-                input placeholder="Воронин Николай"
+                input.name placeholder="Воронин Николай"  name="name"
               .input.input_field
                 label
                   |Введите Ваш номер телефона:
-                input placeholder="050 417 07 28"
+                input.phone placeholder="050 417 07 28"  name="phone"
               .input.accept_input
                 .order_button_wrap
                   button.order_button
